@@ -114,7 +114,29 @@
         <text></text>
         <figure></figure>
     </section>
+    <script>
+        window.addEventListener("load", sidenVises);
 
+        function sidenVises() {
+            console.log("siden vises!")
+            document.querySelector("#menuknap-mobile").addEventListener("click", toggleMenu);
+
+        }
+
+        function toggleMenu() {
+            document.querySelector("#mobile-nav").classList.toggle("hidden");
+
+
+            let erSkjult = document.querySelector("#mobile-nav").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap-mobile").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap-mobile").innerHTML = "&times;";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
