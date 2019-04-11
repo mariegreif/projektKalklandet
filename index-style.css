@@ -15,6 +15,45 @@ img {
     background-size: cover;
 }
 
+
+#logo-kalklandet img {
+    width: 70%;
+    padding: 1em;
+}
+
+/*******************BURGERMENU********************/
+
+#menuknap-mobile {
+    width: 2em;
+    height: 1.5em;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0.5rem;
+}
+
+#mobile-nav {
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+    top: 10.2vw;
+    text-align: center;
+
+}
+
+#mobile-nav .drop-down {
+    display: block;
+    background-color: white;
+}
+
+#mobile-nav .drop-down a {
+    display: block;
+}
+
+
 .drop-down {
     position: relative;
     display: inline-block;
@@ -34,9 +73,47 @@ img {
     display: block;
 }
 
+/********************MENU DESKTOP**********************/
+
+.hidden {
+    transform: scale(0);
+}
+
+#desktop {
+    display: none;
+}
+
+/* Links inside the navbar */
+#desktop a {
+    float: right;
+    display: block;
+    position: relative;
+}
 
 
 
+
+@media only screen and (min-width: 1160px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+
+    #desktop {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        float: right;
+
+    }
+
+    #menuknap-mobile {
+        display: none;
+    }
+}
 
 
 /*
