@@ -40,7 +40,6 @@ img {
     position: fixed;
     top: 10.2vw;
     text-align: center;
-
 }
 
 #mobile-nav .drop-down {
@@ -199,7 +198,18 @@ button {
     }
 }
 
+/******************FOOTER*********************/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #BFB595;
+    color: white;
+    text-align: center;
+}
 
+/***********FOOTER SLUT*****************/
 
 
 /*
