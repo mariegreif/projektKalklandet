@@ -17,21 +17,25 @@ img {
 
 
 #logo-kalklandet img {
-    width: 100px;
+    width: 150%;
+}
+
+#logo-kalklandet {
+    position: fixed;
 }
 
 /*******************BURGERMENU********************/
 
 #menuknap-mobile {
-    width: 2em;
-    height: 1.5em;
-    font-size: 2em;
+    width: 1.5em;
+    height: 1em;
+    font-size: 1.6em;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     right: 0;
-    top: 0.5rem;
+    top: 0;
 }
 
 #mobile-nav {
@@ -84,9 +88,14 @@ img {
 
 /* Links inside the navbar */
 #desktop a {
-    float: right;
     display: block;
     position: relative;
+}
+
+.drop-down {
+    float: right;
+    padding: 2vw;
+
 }
 
 /**************ATTRAKTIONER BOX***************/
@@ -176,6 +185,41 @@ button {
     background-color: #89b62e
 }
 
+
+/********** SLIDESHOW ***************/
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s cubic-bezier(.7, .12, .25, 1);
+}
+
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/************ SLIDESHOW SLUT *****************/
 
 @media only screen and (min-width: 1160px) {
 
