@@ -12,7 +12,7 @@
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
-                <img src="img/logo_kalklandet.png" alt="logo">
+                <img src="img/logo-ny.png" alt="logo">
             </a></div>
         <nav>
             <div id="menuknap-mobile">☰</div>
@@ -88,8 +88,8 @@
         <div class="background-img">
             <img src="img/kalklandet-img.jpg" alt="splash-img">
             <div id="velkommentil">
-                <h2>Velkommen til Kalklandet</h2>
-                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+                <h2 class="velkommen"></h2>
+                <p class="introtekst"></p>
             </div>
             <div id="attraktioner">
                 <div id="koldkrigsmuseum">
@@ -101,11 +101,11 @@
                     <button>Læs mere</button>
                 </div>
                 <div id="geomuseum">
-                    <h4>Geomuseum Faxe</h4>
+                    <h4>Geomuseum Faxe<br><br></h4>
                     <button>Læs mere</button>
                 </div>
-                <div id="Stevns naturcenter">
-                    <h4>Stevns Naturcenter</h4>
+                <div id="stevnsnaturcenter">
+                    <h4>Stevns Naturcenter<br><br></h4>
                     <button>Læs mere</button>
                 </div>
             </div>
@@ -134,6 +134,30 @@
             } else {
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
+        }
+
+        let indhold;
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        //hent JSON fil i asynkron funktion
+        async function hentJson() {
+            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/10";
+
+            //henter data filen
+            const myJson = await fetch(url);
+
+
+            //den hentede json filen skal tolkes som json
+            indhold = await myJson.json();
+
+            //Kald funktionen som viser data i DOM
+            visIndhold();
+        }
+
+        function visIndhold() {
+            document.querySelector(".velkommen").innerHTML = indhold.title.rendered;
+            document.querySelector(".introtekst").innerHTML = indhold.content.rendered;
+
         }
     </script>
 

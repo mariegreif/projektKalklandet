@@ -17,8 +17,7 @@ img {
 
 
 #logo-kalklandet img {
-    width: 70%;
-    padding: 1em;
+    width: 100px;
 }
 
 /*******************BURGERMENU********************/
@@ -90,7 +89,92 @@ img {
     position: relative;
 }
 
+/**************ATTRAKTIONER BOX***************/
 
+button {
+    float: right;
+}
+
+#attraktioner h4 {
+    margin-top: 1vw;
+}
+
+#attraktioner {
+    display: grid;
+    padding: 1em;
+    position: relative;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#attraktioner button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    align-self: flex-end;
+    position: relative;
+    top: 15vw;
+    bottom: 0;
+    color: white;
+}
+
+#koldkrigsmuseum {
+    border: 0.5px solid;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/museum-logo/KKM-logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#koldkrigsmuseum button {
+    background-color: #55798e;
+}
+
+#stevnsklint {
+    border: 0.5px solid;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/museum-logo/stevnsklint-logo.svg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#stevnsklint button {
+    background-color: #0082ac;
+}
+
+#geomuseum {
+    border: 0.5px solid;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/museum-logo/geomuse-logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#geomuseum button {
+    background-color: #54a29e;
+}
+
+#stevnsnaturcenter {
+    border: 0.5px solid;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/museum-logo/naturcenter-logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#stevnsnaturcenter button {
+    background-color: #89b62e
+}
 
 
 @media only screen and (min-width: 1160px) {
@@ -114,6 +198,8 @@ img {
         display: none;
     }
 }
+
+
 
 
 /*
