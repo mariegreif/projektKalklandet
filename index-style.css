@@ -18,58 +18,99 @@ img {
 
 #logo-kalklandet img {
     width: 150%;
+
 }
 
 #logo-kalklandet {
     position: fixed;
+    z-index: 1000;
 }
+
+
+@font-face {
+    font-family: 'limestoneregular';
+    src: url('limestone_regular-webfont.woff2') format('woff2'),
+        url('limestone_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+p {
+    font-family: 'Limestone', Arial, sans-serif;
+}
+
+a,
+button,
+span {
+    font-family: 'Limestone', Arial, sans-serif;
+}
+
+
+
 
 /*******************BURGERMENU********************/
 
 #menuknap-mobile {
     width: 1.5em;
     height: 1em;
-    font-size: 1.6em;
+    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 0;
-    top: 0;
+    right: 1vw;
+    top: 1vw;
+    color: white;
+    z-index: 10001;
 }
 
 #mobile-nav {
     width: 100%;
     list-style-type: none;
     position: fixed;
-    top: 10.2vw;
+    top: 5vw;
     text-align: center;
+    background-color: #B8B194;
 
 }
 
 #mobile-nav .drop-down {
+    float: right;
     display: block;
-    background-color: white;
+    background-color: #B8B194;
+    color: white;
 }
 
-#mobile-nav .drop-down a {
+.drop-down a {
     display: block;
 }
 
+.drop-down span {
+    display: block;
+}
 
 .drop-down {
     position: relative;
-    display: inline-block;
+    display: block;
+    text-transform: uppercase;
+    color: #B8B194;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #B8B194;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
     padding: 12px 16px;
     z-index: 1;
+}
+
+.dropdown-content li {
+    float: left;
 }
 
 .drop-down:hover .dropdown-content {
@@ -92,20 +133,66 @@ img {
     position: relative;
 }
 
-.drop-down {
+#desktop .drop-down {
     float: right;
-    padding: 2vw;
+    position: relative;
+    padding-right: 5vw;
+    right: 4vw;
+    top: 4.5vw;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5vw;
+    transition:
+}
 
+#desktop .dropdown-content {
+    font-size: 1.2vw;
+}
+
+#desktop span {
+    font-weight: bold;
+}
+
+#desktop a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+#desktop .drop-down:hover {
+    color: orange;
+    cursor: pointer;
+    transform: scale(2vw)
+}
+
+#desktop .drop-down a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+.forside-content {
+    margin: 5vw;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.38);
+    position: absolute;
+    top: 10vw;
+}
+
+.forside-content .overskrift {
+    text-align: center;
+    color: white;
+}
+
+.forside-content .indhold {
+    color: white;
+    text-align: center;
 }
 
 /**************ATTRAKTIONER BOX***************/
 
-button {
-    float: right;
-}
-
-#attraktioner h4 {
-    margin-top: 1vw;
+h2 {
+    text-align: center;
 }
 
 #attraktioner {
@@ -116,74 +203,48 @@ button {
     text-align: center;
 }
 
-#attraktioner button {
-    padding: 0.3rem;
-    font-size: 0.8rem;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    align-self: flex-end;
-    position: relative;
-    top: 15vw;
-    bottom: 0;
-    color: white;
-}
-
 #koldkrigsmuseum {
-    border: 0.5px solid;
+    border: 0.5px solid lightgrey;
     width: 150px;
-    height: 150px;
-    background-image: url(img/museum-logo/KKM-logo.svg);
+    height: 155px;
+    background-image: url(img/museum-logo/koldkrigs-muse.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
-#koldkrigsmuseum button {
-    background-color: #55798e;
-}
 
 #stevnsklint {
-    border: 0.5px solid;
+    border: 0.5px solid lightgrey;
     width: 150px;
-    height: 150px;
-    background-image: url(img/museum-logo/stevnsklint-logo.svg);
-    background-size: 120%;
+    height: 155px;
+    background-image: url(img/museum-logo/stevns-klint.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
-}
-
-#stevnsklint button {
-    background-color: #0082ac;
 }
 
 #geomuseum {
-    border: 0.5px solid;
+    border: 0.5px solid lightgrey;
     width: 150px;
-    height: 150px;
-    background-image: url(img/museum-logo/geomuse-logo.svg);
+    height: 155px;
+    background-image: url(img/museum-logo/geomuse-faxe.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
-}
-
-#geomuseum button {
-    background-color: #54a29e;
 }
 
 #stevnsnaturcenter {
-    border: 0.5px solid;
+    border: 0.5px solid lightgrey;
     width: 150px;
-    height: 150px;
-    background-image: url(img/museum-logo/naturcenter-logo.svg);
+    height: 155px;
+    background-image: url(img/museum-logo/stevns-natur.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
-#stevnsnaturcenter button {
-    background-color: #89b62e
-}
+
 
 
 /********** SLIDESHOW ***************/
@@ -193,7 +254,6 @@ button {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #ffffff;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s cubic-bezier(.7, .12, .25, 1);
@@ -223,6 +283,8 @@ button {
 
 @media only screen and (min-width: 1160px) {
 
+    #logo-kalklandet {}
+
     #mobile-nav {
         display: none;
     }
@@ -233,14 +295,27 @@ button {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 2010;
         float: right;
 
+    }
+
+    #desktop .drop-down {
+        color: white;
+        background-color: #B8B194;
     }
 
     #menuknap-mobile {
         display: none;
     }
+
+    #attraktioner {
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+
+    }
+
+
 }
 
 
