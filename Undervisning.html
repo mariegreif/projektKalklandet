@@ -12,7 +12,7 @@
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
-                <img src="img/logo_kalklandet.png" alt="logo">
+                <img src="img/museum-logo/header-seneste.svg" alt="logo">
             </a></div>
         <nav>
             <div id="menuknap-mobile">☰</div>
@@ -84,82 +84,29 @@
         </nav>
     </header>
 
-    <!--
+
     <main>
-        <div class="background-img">
-            <img src="img/kalklandet-img.jpg" alt="splash-img">
-            <div id="Undervisning">
-                <h2>Undervisningstjenesten Kalkland</h2>
-                <p>lorem ipsum lorem ipsum lorem ipsum</p>
-            </div>
-            <div id="institutioner">
-                <div id="Børnehave">
-                    <h4>Børnehave</h4>
-                    <button>Læs mere</button>
-                </div>
-                <div id="Folkeskole">
-                    <h4>Folkeskole</h4>
-                    <button>Læs mere</button>
-                </div>
-                <div id="Gymnasium">
-                    <h4>Gymnasium</h4>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-
-            <div id="Aktiviteter">
-                <h1>Børnehave</h1>
-                <div id="børnehave_aktiviteter">
-                    <h4>lorem ipsum lorem ipsum lorem ipsum</h4>
-                    <button>Læs mere</button>
-                </div>
-                <h1>Folkeskole</h1>
-                <div id="Folkeskole_aktiviteter">
-                    <h4>lorem ipsum lorem ipsum lorem ipsum</h4>
-                    <button>Læs mere</button>
-                </div>
-                <div id="Folkeskole_aktiviteter1">
-                    <h4>lorem ipsum lorem ipsum lorem ipsum</h4>
-                    <button>Læs mere</button>
-                </div>
-                <h1>Gymnasium</h1>
-                <div id="Gymnasium_aktiviteter">
-                    <h4>lorem ipsum lorem ipsum</h4>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-        </div>
--->
-
-
-    <main class="retter"></main>
-
-
-    <template>
-
-        <section class="ret">
-            <h2></h2>
-            <img>
-            <p class="pris"></p>
-            <p class="kort"></p>
-
+        <section class="gymnasium">
+            <h2>Gymnasium</h2>
         </section>
-    </template>
-
-    <template>
-
         <section class="folkeskole">
-            <h2></h2>
-            <img>
-            <p class="kort"></p>
-
+            <h2>Folkeskole</h2>
         </section>
+        <section class="bornehave">
+            <h2>Børnehave</h2>
+        </section>
+    </main>
+
+    <template id="uv">
+        <h2></h2>
+        <img>
+        <p class="kort"></p>
     </template>
 
 
 
     <script>
-        let retter = [];
+        let undervisninger = [];
         let filter = "alle";
         document.addEventListener("DOMContentLoaded", hentJson);
 
@@ -172,24 +119,37 @@
 
 
             //den hentede json filen skal tolkes som json
-            retter = await myJson.json();
+            undervisninger = await myJson.json();
 
             //Kald funktionen som viser data i DOM
-            visRetter();
+            visUndervisning();
         }
 
-        function visRetter() {
-            let dest = document.querySelector(".retter");
-            let temp = document.querySelector("template");
+        function visUndervisning() {
+            let dest1 = document.querySelector(".gymnasium");
+            let dest2 = document.querySelector(".folkeskole");
+            let dest3 = document.querySelector(".bornehave");
+            let temp = document.querySelector("#uv");
 
-            retter.forEach(ret => {
+            undervisninger.forEach(undervisning => {
 
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = ret.title.rendered;
-                klon.querySelector("img").src = ret.billede.guid;
-                klon.querySelector(".kort").innerHTML = ret.beskrivelse;
-                dest.appendChild(klon);
+                klon.querySelector("h2").innerHTML = undervisning.title.rendered;
+                klon.querySelector("img").src = undervisning.billede.guid;
+                klon.querySelector(".kort").innerHTML = undervisning.beskrivelse;
 
+                if (undervisning.kategori == "Gymnasium") {
+
+                    dest1.appendChild(klon);
+                }
+                if (undervisning.kategori == "Folkeskole") {
+
+                    dest2.appendChild(klon);
+                }
+                if (undervisning.kategori == "Børnehave") {
+
+                    dest3.appendChild(klon);
+                }
 
             })
         }
