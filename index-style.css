@@ -171,7 +171,7 @@ span {
 }
 
 
-.forside-content {
+#forside-content {
     margin: 5vw;
     display: grid;
     background-color: rgba(0, 0, 0, 0.38);
@@ -179,28 +179,37 @@ span {
     top: 10vw;
 }
 
-.forside-content .overskrift {
+#forside-content .overskrift {
     text-align: center;
     color: white;
 }
 
-.forside-content .indhold {
+#forside-content .indhold {
     color: white;
     text-align: center;
 }
 
 /**************ATTRAKTIONER BOX***************/
 
-h2 {
+.besog {
     text-align: center;
 }
 
 #attraktioner {
     display: grid;
     padding: 1em;
-    position: relative;
     grid-template-columns: auto auto;
     text-align: center;
+
+}
+
+.muse {
+    transition: transform .2s;
+}
+
+.muse:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #koldkrigsmuseum {
@@ -279,6 +288,8 @@ h2 {
     }
 }
 
+
+
 /************ SLIDESHOW SLUT *****************/
 
 @media only screen and (min-width: 1160px) {
@@ -309,59 +320,65 @@ h2 {
         display: none;
     }
 
+
     #attraktioner {
-        grid-template-columns: auto auto auto auto;
+        padding: 1em;
+        position: absolute;
+        top: 30vw;
+        left: 15vw;
+        grid-template-columns: auto auto auto auto auto;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.38);
+
 
     }
 
+    .besog {
+        position: absolute;
+        top: 20vw;
+        left: 25vw;
 
+        color: white;
+        font-size: 4vw;
+    }
+
+    #forside-content {
+        display: block;
+    }
+
+
+    #stevnsnaturcenter {
+        border: 0.5px solid lightgrey;
+        width: 180px;
+        height: 185px;
+        background-image: url(img/museum-logo/stevns-natur.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 1em;
+    }
+
+    #geomuseum {
+        width: 180px;
+        height: 185px;
+    }
+
+    #stevnsklint {
+        width: 180px;
+        height: 185px;
+    }
+
+    #koldkrigsmuseum {
+        width: 180px;
+        height: 185px;
+    }
 }
 
+/*************UNDERVISNINGSSIDEN***************/
 
-
-
-/*
-#background-img {
-    position: relative;
-    background-size: cover;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    margin: 3vw;
 
 }
-
-#koldkrigsmuseum {
-    position: absolute;
-    bottom: 13em;
-    left: 5em;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-#stevnsklint {
-    position: absolute;
-    bottom: 13em;
-    left: 20em;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-#geomuseum {
-    position: absolute;
-    bottom: 13em;
-    left: 35em;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-button {
-    float: right;
-}
-*/

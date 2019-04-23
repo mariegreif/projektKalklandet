@@ -92,29 +92,32 @@
 
 
     <div class="slideshow-container">
-        <div class="forside-content">
+        <div id="forside-content" class="hidden">
             <h1 class="overskrift">
             </h1>
             <p class="indhold">
             </p>
         </div>
 
+
         <div class="mySlides fade">
-            <img src="img/splash-billede1.png">
+            <img src="img/splash-desktop1.png">
+
         </div>
 
         <div class="mySlides fade">
 
-            <img src="img/splashbillede2.png">
+            <img src="img/splash-desktop2.png">
         </div>
 
         <div class="mySlides fade">
 
-            <img src="img/splash-billede3.png">
+            <img src="img/splash-desktop3.png">
 
         </div>
 
     </div>
+
 
 
     <div style="text-align:center">
@@ -124,23 +127,23 @@
     </div>
 
 
-    <h2>BESØG OS IDAG!</h2>
 
+    <h1 class="besog">VELKOMMEN TIL KALKLANDET!</h1>
     <div id="attraktioner">
         <a href="koldkrigsmuseum.html">
-            <div id="koldkrigsmuseum">
+            <div id="koldkrigsmuseum" class="muse">
             </div>
         </a>
         <a href="stevnsklint.html">
-            <div id="stevnsklint">
+            <div id="stevnsklint" class="muse">
             </div>
         </a>
         <a href="geomuseum.html">
-            <div id="geomuseum">
+            <div id="geomuseum" class="muse">
             </div>
         </a>
         <a href="stevnsnaturcenter.html">
-            <div id="stevnsnaturcenter">
+            <div id="stevnsnaturcenter" class="muse">
             </div>
         </a>
     </div>
@@ -214,6 +217,7 @@
             document.querySelector(".indhold").innerHTML = indhold.content.rendered;
 
         }
+
     </script>
 
 </body>
