@@ -7,38 +7,152 @@
     <title>Kalklandet</title>
     <link rel="stylesheet" href="index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="splash">
-        <h1>UNDERVISNINGTJENSTEN<br>KALKLANDET</h1>
-        <div id="ikoner-alle">
-            <a href="koldkrigsmuseum.html">
-                <div id="bornehave-ikon">
-                </div>
+
+
+    <header>
+        <div id="logo-kalklandet">
+            <a href="index.html">
+                <img src="img/header-seneste.svg" alt="logo">
             </a>
-            <a href="stevnsklint.html">
-                <div id="folkeskole-ikon">
-                </div>
-            </a>
-            <a href="geomuseum.html">
-                <div id="gymnasium-ikon">
-                </div>
-            </a>
+        </div>
+        <nav>
+            <div id="menuknap-mobile">☰</div>
+            <ul id="mobile-nav" class="hidden">
+                <li class="drop-down">
+                    <span>Besøg Kalklandet</span>
+                    <a href="">Koldkrigsmuseum</a>
+                    <a href="">Stevns Klint</a>
+                    <a href="">Geomuseum Faxe</a>
+                    <a href="">Stevns Naturcenter</a>
+
+                </li>
+                <li class="drop-down"><span>Undervisning</span>
+                    <a href="">Børnehave</a>
+                    <a href="">Grundskoleklasser</a>
+                    <a href="">Gymnasium</a>
+                </li>
+
+                <li class="drop-down">
+                    <span>Om Os</span>
+                    <a href="">Hvem er vi?</a>
+                </li>
+                <li class="drop-down"><span>Kontakt</span>
+
+                    <a href="">Find vej</a>
+                    <a href="">Åbningstider</a>
+                    <a href="">Telefonnummer</a>
+
+                </li>
+            </ul>
+
+            <ul id="desktop">
+                <li class="drop-down"><a href="kontakt.html">Kontakt</a>
+                    <div class="dropdown-content">
+                        <a href="">Find vej</a>
+                        <a href="">Åbningstider</a>
+                        <a href="">Telefonnummer</a>
+                    </div>
+
+                </li>
+                <li class="drop-down">
+                    <a href="omOs.html">Om Os</a>
+                    <div class="dropdown-content">
+                        <a href="">Hvem er vi?</a>
+                    </div>
+                </li>
+                <li class="drop-down"><a href="Undervisning.html">Undervisning</a>
+                    <div class="dropdown-content">
+                        <a href="">Børnehave</a>
+                        <a href="">Grundskoleklasser</a>
+                        <a href="">Gymnasium</a>
+                    </div>
+                </li>
+                <li class="drop-down">
+                    <a href="">Besøg Kalklandet</a>
+                    <div class="dropdown-content">
+                        <a href="">Koldkrigsmuseum</a>
+                        <a href="">Stevns Klint</a>
+                        <a href="">Geomuseum Faxe</a>
+                        <a href="">Stevns Naturcenter</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <div class="slideshow-container">
+        <div id="forside-content" class="hidden">
+            <h1 class="overskrift">
+            </h1>
+            <p class="indhold">
+            </p>
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="img/splash-desktop1.png">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/splash-desktop2.png">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/splash-desktop3.png">
+
         </div>
 
     </div>
 
 
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+    <h1 class="besog1">UNDERVISNINGTJENSTEN<br>KALKLANDET</h1>
+    <div id="ikoner-alle">
+        <a href="#bornehave-afsnit">
+            <div id="bornehave-ikon" class="muse">
+            </div>
+        </a>
+        <a href="#folkeskole-afsnit">
+            <div id="folkeskole-ikon" class="muse">
+            </div>
+        </a>
+        <a href="#gymnasium-afsnit">
+            <div id="gymnasium-ikon" class="muse">
+            </div>
+        </a>
+    </div>
+
+
     <main>
-        <section class="gymnasium">
-            <h2>GYMNASIUM</h2>
+        <section id="bornehave-afsnit" class="bornehave">
+            <h2>BØRNEHAVE</h2>
         </section>
-        <section class="folkeskole">
+        <section id="folkeskole-afsnit" class="folkeskole">
             <h2>FOLKESKOLE</h2>
         </section>
-        <section class="bornehave">
-            <h2>BØRNEHAVE</h2>
+        <section id="gymnasium-afsnit" class="gymnasium">
+            <h2>GYMNASIUM</h2>
         </section>
     </main>
 
@@ -58,6 +172,50 @@
 
 
     <script>
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("siden vises!")
+            document.querySelector("#menuknap-mobile").addEventListener("click", toggleMenu);
+
+        }
+
+        function toggleMenu() {
+            document.querySelector("#mobile-nav").classList.toggle("hidden");
+
+
+            let erSkjult = document.querySelector("#mobile-nav").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap-mobile").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap-mobile").innerHTML = "&times;";
+            }
+        }
+
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
         let undervisninger = [];
         let filter = "alle";
         document.addEventListener("DOMContentLoaded", hentJson);
