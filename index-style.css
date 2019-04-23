@@ -65,6 +65,7 @@ span {
     top: 1vw;
     color: white;
     z-index: 10001;
+    cursor: pointer;
 }
 
 #mobile-nav {
@@ -72,29 +73,38 @@ span {
     list-style-type: none;
     position: fixed;
     top: 5vw;
-    text-align: center;
+    display: grid;
     background-color: #B8B194;
-
+    height: 500px;
+    padding-top: 5vw;
 }
 
 #mobile-nav .drop-down {
-    float: right;
-    display: block;
+
     background-color: #B8B194;
     color: white;
 }
 
-.drop-down a {
-    display: block;
+#mobile-nav span {
+    font-size: 5vw;
+    font-weight: bold;
+    text-decoration: underline;
+
+
 }
 
-.drop-down span {
+#mobile-nav a {
     display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1vw;
 }
+
+
 
 .drop-down {
     position: relative;
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     color: #B8B194;
 }
