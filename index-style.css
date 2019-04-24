@@ -602,8 +602,8 @@ footer {
 
 .enkel img {
     width: 100%;
-    max-width: 400px;
-    float: right;
+    max-width: 300px;
+
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
@@ -765,6 +765,11 @@ footer {
 
     .enkel {
         grid-template-columns: 1fr 1fr;
+
     }
 
+    .column-right {
+        justify-self: center;
+        border-style: none;
+    }
 }
