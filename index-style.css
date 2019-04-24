@@ -45,7 +45,8 @@ p {
 
 a,
 button,
-span {
+span,
+    {
     font-family: 'Limestone', Arial, sans-serif;
 }
 
@@ -315,11 +316,99 @@ span {
     }
 }
 
+/*************OM-OS-SIDEN*******************/
+.omos {
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-bottom: 1.5vw;
+    margin: 1vw;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+}
+
+
+.omos:hover {
+    transform: scale(1.1);
+}
+
+
+.tekst-omos {
+    padding: 1em 1em 1em;
+    position: absolute;
+    top: 60vw;
+    margin: 1vw;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+#omos-main {
+    margin-top: 125vw;
+}
+
+
+/*************KONTAKT***************/
+
+#kontakt-main {
+    margin-top: 125vw;
+}
+
+.kontakt {
+    position: absolute;
+    top: 60vw;
+    margin: 1vw;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+
+.ikoner-kontakt {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+#adresse-ikon {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/adresse.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+
+#aebningstider-ikon {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/%C3%A5bningstider.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#telfonnummer-ikon {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/telefonnummer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
 
 /*************UNDERVISNINGSSIDEN***************/
 
 .ny_container {
-
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3rem;
@@ -792,4 +881,32 @@ footer {
         border-style: none;
         padding-right: 5vw;
     }
+
+    .tekst-omos {
+        padding: 2em 2em 2em;
+        position: absolute;
+        top: 12vw;
+        margin: 5vw;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.38);
+        color: white;
+        text-align: center;
+    }
+
+    .kontakt {
+        padding: 2em 2em 2em;
+        position: absolute;
+        top: 12vw;
+        left: 20vw;
+        margin: 5vw;
+        background-color: rgba(0, 0, 0, 0.38);
+        color: white;
+    }
+
+    .ikoner-kontakt {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 0;
+    }
+
 }
