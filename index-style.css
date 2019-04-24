@@ -412,6 +412,201 @@ article {
 
 /************ SLIDESHOW SLUT *****************/
 
+
+
+
+/*************FOOTER***************/
+
+.flex-rw {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    background: #776B5F;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-list-top > li {
+    padding-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.footer-list-top > li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #BFB595;
+    transition: width .3s;
+}
+
+
+.footer-list-top > li:hover::after {
+    width: 50%;
+    //transition: width .3s;
+}
+
+.footer-list-top a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-list-header {
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font-family: 'Limestone';
+}
+
+.footer-list-top p {
+    color: white;
+}
+
+.footer-social-overlap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 2;
+    justify-self: start;
+    font-size: 6vw;
+}
+
+.space {
+    margin-top: 10vw;
+}
+
+
+/*
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #BFB595;
+    color: white;
+    text-align: center;
+    word-spacing: 7px;
+}
+
+.some {
+    position: fixed;
+    top: 94%;
+    left: 80%;
+    color: white;
+    font-size: 25px;
+}
+
+.some a:hover {
+    color: ;
+}
+
+.fa-facebook {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+*/
+
+.uv-intro {}
+
+.text-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px
+}
+
+.search {
+    float: left;
+}
+
+/***********KOLDKRIGSMUSEUM***********/
+
+#aabningstider {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/%C3%A5bningstider.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#aktuelt {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/aktuelt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#billetter {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/billetter.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#findvej {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/findvej.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#bannerIkoner {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.text-box-kkm {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
+
+}
+
+.enkel {
+    background-color: #387288;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+}
+
+.enkel img {
+    width: 100%;
+    max-width: 400px;
+    float: right;
+}
+
+/************ MEDIA QUERIES DESKTOP ******************/
 @media only screen and (min-width: 1160px) {
 
     #logo-kalklandet img {
@@ -549,123 +744,27 @@ article {
         font-size: 2em;
     }
 
-}
+    #bannerIkoner {
+        padding: 1em 1em 0;
+        position: absolute;
+        top: 30vw;
+        left: 15vw;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
 
+    }
 
+    .text-box-kkm {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+    }
 
-/*************FOOTER***************/
+    .text-box-kkm p {
+        grid-column-start: 2;
+    }
 
-.flex-rw {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-decoration: none;
-    list-style-type: none;
-}
+    .enkel {
+        grid-template-columns: 1fr 1fr;
+    }
 
-footer {
-    background: #776B5F;
-    margin-top: auto;
-    width: 100%;
-}
-
-.footer-list-top > li {
-    padding-bottom: 10px;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-
-.footer-list-top > li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #BFB595;
-    transition: width .3s;
-}
-
-
-.footer-list-top > li:hover::after {
-    width: 50%;
-    //transition: width .3s;
-}
-
-.footer-list-top a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-list-header {
-    padding: 10px 0 5px 0;
-    color: #fff;
-    font-family: 'Limestone';
-}
-
-.footer-list-top p {
-    color: white;
-}
-
-.footer-social-overlap {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    z-index: 2;
-    justify-self: start;
-    font-size: 6vw;
-}
-
-.space {
-    margin-top: 10vw;
-}
-
-
-/*
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #BFB595;
-    color: white;
-    text-align: center;
-    word-spacing: 7px;
-}
-
-.some {
-    position: fixed;
-    top: 94%;
-    left: 80%;
-    color: white;
-    font-size: 25px;
-}
-
-.some a:hover {
-    color: ;
-}
-
-.fa-facebook {
-    color: white;
-    padding-left: 10px;
-    text-decoration: none;
-}
-
-.fa-instagram {
-    color: white;
-    padding-left: 10px;
-    text-decoration: none;
-}
-*/
-
-.uv-intro {}
-
-.text-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
-    margin-top: 5vw;
-    margin-left: 2vw;
-    max-width: 1200px
-}
-
-.search {
-    float: left;
 }
