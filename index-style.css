@@ -37,6 +37,8 @@ img {
 
 h1,
 h2,
+h3,
+h4,
 p {
     font-family: 'Limestone', Arial, sans-serif;
 }
@@ -587,8 +589,11 @@ footer {
     grid-template-columns: auto;
     grid-gap: 2vw;
     margin-top: 5vw;
+    margin-bottom: 5vw;
     margin-left: 2vw;
     max-width: 1200px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
 
 }
 
@@ -598,12 +603,18 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
 }
 
 .enkel img {
     width: 100%;
     max-width: 300px;
 
+}
+
+.kkm-aktuelt {
+    margin-left: 2vw;
+    color: #387288;
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
@@ -755,13 +766,21 @@ footer {
     }
 
     .text-box-kkm {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto 610px auto;
         max-width: 1200px;
     }
 
     .text-box-kkm p {
         grid-column-start: 2;
+        color: #387288;
     }
+
+    .text-box-kkm h3 {
+        grid-column-start: 2;
+        color: #387288;
+    }
+
+
 
     .enkel {
         grid-template-columns: 1fr 1fr;
@@ -769,7 +788,8 @@ footer {
     }
 
     .column-right {
-        justify-self: center;
+        justify-self: end;
         border-style: none;
+        padding-right: 5vw;
     }
 }
