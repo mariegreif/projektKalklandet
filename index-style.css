@@ -18,7 +18,6 @@ img {
 
 #logo-kalklandet img {
     width: 150%;
-
 }
 
 #logo-kalklandet {
@@ -62,7 +61,7 @@ span {
     align-items: center;
     position: fixed;
     right: 1vw;
-    top: 1vw;
+    top: 0;
     color: white;
     z-index: 10001;
     cursor: pointer;
@@ -72,7 +71,7 @@ span {
     width: 100%;
     list-style-type: none;
     position: fixed;
-    top: 5vw;
+    top: 4.1vw;
     display: grid;
     background-color: #B8B194;
     height: 500px;
@@ -148,7 +147,7 @@ span {
     position: relative;
     padding-right: 5vw;
     right: 4vw;
-    top: 4.5vw;
+    top: 1.3vw;
     text-transform: uppercase;
     list-style-type: none;
     font-size: 1.5vw;
@@ -157,6 +156,7 @@ span {
 
 #desktop .dropdown-content {
     font-size: 1.2vw;
+
 }
 
 #desktop span {
@@ -166,7 +166,7 @@ span {
 #desktop a {
     text-decoration: none;
     color: white;
-    margin: 0;
+    margin: 0.5vw 1vw;
 }
 
 #desktop .drop-down:hover {
@@ -175,9 +175,22 @@ span {
     transform: scale(2vw)
 }
 
-#desktop .drop-down a:hover {
-    color: orange;
+#desktop .drop-down a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
     cursor: pointer;
+}
+
+
+
+#desktop .drop-down a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+
 }
 
 
@@ -365,7 +378,7 @@ article img {
 }
 
 article {
-    background-color: rgba(0, 0, 0, 0.38);
+    background-color: #D1CAB0;
     color: white;
 }
 
@@ -401,7 +414,9 @@ article {
 
 @media only screen and (min-width: 1160px) {
 
-    #logo-kalklandet {}
+    #logo-kalklandet img {
+        width: 100%;
+    }
 
     #mobile-nav {
         display: none;
@@ -410,7 +425,6 @@ article {
 
     #desktop {
         display: block;
-        position: fixed;
         position: fixed;
         top: 0;
         width: 100%;
@@ -432,7 +446,7 @@ article {
     #attraktioner {
         padding: 1em 1em 0;
         position: absolute;
-        top: 25vw;
+        top: 30vw;
         left: 15vw;
         grid-template-columns: auto auto auto auto auto;
         justify-content: center;
@@ -520,12 +534,91 @@ article {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    footer.flex-rw {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .footer-social-overlap i {
+        font-size: 3.5vw;
+    }
+
+    .footer-list-header {
+        font-size: 2em;
+    }
 
 }
 
 
 
 /*************FOOTER***************/
+
+.flex-rw {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    background: #776B5F;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-list-top > li {
+    padding-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.footer-list-top > li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #BFB595;
+    transition: width .3s;
+}
+
+
+.footer-list-top > li:hover::after {
+    width: 50%;
+    //transition: width .3s;
+}
+
+.footer-list-top a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-list-header {
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font-family: 'Limestone';
+}
+
+.footer-list-top p {
+    color: white;
+}
+
+.footer-social-overlap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 2;
+    justify-self: start;
+    font-size: 6vw;
+}
+
+.space {
+    margin-top: 10vw;
+}
+
+
+/*
 footer {
     position: fixed;
     left: 0;
@@ -560,6 +653,7 @@ footer {
     padding-left: 10px;
     text-decoration: none;
 }
+*/
 
 .uv-intro {}
 
@@ -570,4 +664,8 @@ footer {
     margin-top: 5vw;
     margin-left: 2vw;
     max-width: 1200px
+}
+
+.search {
+    float: left;
 }
