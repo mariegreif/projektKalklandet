@@ -129,37 +129,61 @@
 
     <h1 class="besog1">UNDERVISNINGTJENSTEN<br>KALKLANDET</h1>
     <div id="ikoner-alle">
-        <a href="#bornehave-afsnit">
+        <a href="#section-bornehave">
             <div id="bornehave-ikon" class="muse">
             </div>
         </a>
-        <a href="#folkeskole-afsnit">
+        <a href="#section-folkeskole">
             <div id="folkeskole-ikon" class="muse">
             </div>
         </a>
-        <a href="#gymnasium-afsnit">
+        <a href="#section-gymnasium">
             <div id="gymnasium-ikon" class="muse">
             </div>
         </a>
     </div>
+    <div class="text-box">
+        <p class="uv-intro">
+            Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.
+        </p>
+        <p class="hurtig-info">
+            Vi tilbyder undervisning mandag til fredag kl. 9-17.
 
+            Koldkrigsmuseum Stevnsfort<br>
 
-    <main>
-        <section id="bornehave-afsnit" class="bornehave">
-            <h2>BØRNEHAVE</h2>
+            Stevns Klint<br>
+
+            Geomuseum Faxe<br>
+
+            Undervisningsforløb 2 timer 1.000 kr.<br>
+            Pr. ekstra time 400 kr.<br>
+            Rollespil, 4 timer 4.000 kr.<br>
+        </p>
+
+    </div>
+
+    <main id="sectioner-uv">
+        <h1 id="section-bornehave">BØRNEHAVE</h1>
+        <section class="ny_container bornehave">
+
         </section>
-        <section id="folkeskole-afsnit" class="folkeskole">
-            <h2>FOLKESKOLE</h2>
+        <h1 id="section-folkeskole">FOLKESKOLE</h1>
+        <section class="ny_container folkeskole">
+
         </section>
-        <section id="gymnasium-afsnit" class="gymnasium">
-            <h2>GYMNASIUM</h2>
+        <h1 id="section-gymnasium">GYMNASIUM</h1>
+        <section class="ny_container gymnasium">
+
         </section>
     </main>
 
     <template id="uv">
-        <h2></h2>
-        <img>
-        <p class="kort"></p>
+        <article>
+            <h2></h2>
+            <img>
+            <p class="kort"></p>
+            <button class="laesmere">LÆS MERE</button>
+        </article>
     </template>
 
     <footer>
@@ -246,8 +270,10 @@
                 let klon = temp.cloneNode(true).content;
                 klon.querySelector("h2").innerHTML = undervisning.title.rendered;
                 klon.querySelector("img").src = undervisning.billede.guid;
+
                 klon.querySelector(".kort").innerHTML = undervisning.beskrivelse;
 
+                // dest1.appendChild(klon);
                 if (undervisning.kategori == "Gymnasium") {
 
                     dest1.appendChild(klon);
