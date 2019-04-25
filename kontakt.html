@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalklandet</title>
     <link rel="stylesheet" href="index-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
-                <img src="img/logo_kalklandet.png" alt="logo">
+                <img src="img/header-seneste.svg" alt="logo">
             </a></div>
         <nav>
             <div id="menuknap-mobile">☰</div>
             <ul id="mobile-nav" class="hidden">
                 <li class="drop-down">
-                    <span>Besøg Kalklandet lorem ipsum</span>
+                    <span>Besøg Kalklandet</span>
                     <div class="dropdown-content">
                         <a href="">Koldkrigsmuseum</a>
                         <a href="">Stevns Klint</a>
@@ -85,37 +85,67 @@
         </nav>
     </header>
 
-    <main>
-        <div class="background-img">
-            <img src="img/kalklandet-img.jpg" alt="splash-img">
-            <div id="kontakt">
-                <h2>Kontakt os</h2>
-            </div>
-            <div id="kontaktinfo">
-                <div id="Addresse">
-                    <h4>Addresse</h4>
-                    <button></button>
-                </div>
-                <div id="Åbningstider">
-                    <h4>Åbningstider</h4>
-                    <button></button>
-                </div>
-                <div id="Telefonnummer">
-                    <h4>Telefonnummer</h4>
-                    <button></button>
-                </div>
-            </div>
 
+    <div class="background-img"> </div>
+    <img src="img/splash-billede1.png" alt="splash-img">
+
+    <main id="kontakt-main">
+
+        <div class="kontakt">
+            <h1>KONTAKT OS</h1>
+            <div class="ikoner-kontakt">
+                <div id="adresse-ikon" class="muse">
+                </div>
+                <div id="aebningstider-ikon" class="muse">
+                </div>
+                <div id="telfonnummer-ikon" class="muse">
+                </div>
+            </div>
         </div>
+
 
     </main>
 
-    <footer>
-        <p>Kontakt English Deutsch</p>
-        <div class="some">
-            <a href="" class="fa fa-facebook"></a>
-            <a href="" class="fa fa-instagram"></a>
-        </div>
+    <footer class="flex-rw">
+
+        <ul class="footer-list-top">
+            <li>
+                <h3 class="footer-list-header">BESØG</h3>
+            </li>
+            <li><a href="stevnsklint.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">STEVNSKLINT</a></li>
+            <li><a href="koldkrigsmuseum.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">KOLDKRIGSMUSEUM</a></li>
+            <li><a href="geomuseum.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">GEOMUSEUM</a></li>
+
+            <li><a href="stevnsnaturcenter.html" itemprop="significantLink" class="generic-anchor footer-list-anchor">STEVNS NATURCENTER</a></li>
+        </ul>
+        <ul class="footer-list-top">
+            <li>
+                <h3 class="footer-list-header">KONTAKT</h3>
+
+
+                <p>
+                    Østsjællands Museum<br>
+                    Rådhusvej 2<br>
+                    4640 Faxe <br><br>
+                    Telefon +45 56 50 28 06<br> Telefonen er åben mandag til fredag<br>
+                    fra kl. 9.00 til 15.00<br><br>
+                    museum@oesm.dk
+                </p>
+            </li>
+        </ul>
+        <ul class="footer-list-top">
+            <li id='help'>
+                <h3 class="footer-list-header">FØLG OS</h3>
+            </li>
+            <span class="footer-social-overlap">
+                <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+            </span><br><br><br><br><br>
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Search..." />
+            </div>
+        </ul>
     </footer>
 
 </body>
