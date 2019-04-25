@@ -732,9 +732,8 @@ footer {
 
 }
 
-.kkm-btn {
+.kkm-btn:hover {
     transform: scale(1.1);
-
 }
 
 /************STEVNSKLINT************/
@@ -795,6 +794,44 @@ footer {
 .text-box-sk h3 {
     grid-column-start: 2;
     color: #008DB8;
+}
+
+.enkel-sk {
+    background-color: #008DB8;
+    color: #CFE3EE;
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+.enkel-sk img {
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.sk-aktuelt {
+    margin-left: 2vw;
+    color: #008DB8;
+}
+
+.sk-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #CFE3EE;
+    color: #008DB8;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.sk-btn:hover {
+    transform: scale(1.1);
 }
 
 
@@ -1124,8 +1161,6 @@ footer {
         color: #387288;
     }
 
-<<<<<<< HEAD
-=======
     .text-box-geo {
         grid-template-columns: auto 610px auto;
         max-width: 1200px;
@@ -1139,13 +1174,13 @@ footer {
         grid-column-start: 2;
     }
 
->>>>>>> origin/master
-    .enkel {
+        {
         grid-template-columns: 1fr 1fr;
 
     }
 
-    .enkel-geo {
+    .enkel-geo,
+    .enkel-sk {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1159,7 +1194,13 @@ footer {
     .column-right-geo {
         justify-self: end;
         border-style: none;
-        float: right
+        float: right;
+    }
+
+    .column-right-sk {
+        justify-self: end;
+        border-style: none;
+        float: right;
     }
 
     .tekst-omos {
@@ -1189,7 +1230,6 @@ footer {
         margin-bottom: 0;
     }
 
-<<<<<<< HEAD
     #omos-main {
         margin-top: 0;
     }
@@ -1197,7 +1237,6 @@ footer {
     #kontakt-main {
         margin-top: 0;
     }
-=======
->>>>>>> origin/master
+
 
 }
