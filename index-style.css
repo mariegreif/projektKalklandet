@@ -285,29 +285,32 @@ span {
 
 /********** SLIDESHOW ***************/
 
-/* The dots/bullets/indicators */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s cubic-bezier(.7, .12, .25, 1);
-}
-
+/* Hide the images by default */
+.mySlides {
+    display: none;
 }
 
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 3.5s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 3.5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: 4
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
     }
 
     to {
@@ -428,6 +431,7 @@ article {
 
 footer {
     background: #776B5F;
+    background-color: rgba(0, 0, 0, 0.49);
     margin-top: auto;
     width: 100%;
 }
@@ -536,6 +540,10 @@ footer {
 
 /***********KOLDKRIGSMUSEUM***********/
 
+.bg-kkm {
+    /*    background-color: #D7DCE2;*/
+}
+
 #aabningstider {
     border: 0.5px solid lightgrey;
     width: 150px;
@@ -599,6 +607,7 @@ footer {
 
 .enkel {
     background-color: #387288;
+    color: #D7DCE2;
     padding: 2vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -616,6 +625,29 @@ footer {
     margin-left: 2vw;
     color: #387288;
 }
+
+.kkm-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #D7DCE2;
+    color: #387288;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.kkm-btn {
+    transform: scale(1.1);
+
+}
+
+/************GEOMUSEUM************/
+
+.geo-aktuelt {}
+
 
 /************ MEDIA QUERIES DESKTOP ******************/
 @media only screen and (min-width: 1160px) {
