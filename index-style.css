@@ -887,11 +887,50 @@ footer {
     max-width: 1200px;
     border-bottom-style: solid;
     border-bottom-width: thin;
+
 }
 
 .text-box-sn h3 {
     grid-column-start: 2;
-    color: #89B62D;
+    color: #92BA53;
+}
+
+.enkel-sn {
+    background-color: #92BA53;
+    color: #EAF2D4;
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+.enkel-sn img {
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.sn-aktuelt {
+    margin-left: 2vw;
+    color: #92BA53;
+}
+
+.sn-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #EAF2D4;
+    color: #92BA53;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.sn-btn:hover {
+    transform: scale(1.1);
 }
 
 /************GEOMUSEUM************/
@@ -1189,7 +1228,8 @@ footer {
     }
 
     .enkel-geo,
-    .enkel-sk {
+    .enkel-sk,
+    .enkel-sn {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1211,6 +1251,13 @@ footer {
         border-style: none;
         float: right;
     }
+
+    .column-right-sn {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
 
     .tekst-omos {
         padding: 2em 2em 2em;
