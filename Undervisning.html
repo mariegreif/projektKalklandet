@@ -16,7 +16,7 @@
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
-                <img src="img/header-seneste.svg" alt="logo">
+                <img src="img/header-seneste-lang.svg" alt="logo">
             </a>
         </div>
         <nav>
@@ -24,27 +24,27 @@
             <ul id="mobile-nav" class="hidden">
                 <li class="drop-down">
                     <span>Besøg Kalklandet</span>
-                    <a href="koldkrigsmuseum.html">Koldkrigsmuseum</a>
-                    <a href="#stevnsklint.html">Stevns Klint</a>
-                    <a href="geomuseum.html">Geomuseum Faxe</a>
-                    <a href="stevnsnaturcenter.html">Stevns Naturcenter</a>
+                    <a href="">Koldkrigsmuseum</a>
+                    <a href="">Stevns Klint</a>
+                    <a href="">Geomuseum Faxe</a>
+                    <a href="">Stevns Naturcenter</a>
 
                 </li>
                 <li class="drop-down"><span>Undervisning</span>
-                    <a href="Undervisning.html">Børnehave</a>
+                    <a href="">Børnehave</a>
                     <a href="">Grundskoleklasser</a>
-                    <a href="Undervisning.html">Gymnasium</a>
+                    <a href="">Gymnasium</a>
                 </li>
 
                 <li class="drop-down">
                     <span>Om Os</span>
-                    <a href="omOs.html">Hvem er vi?</a>
+                    <a href="">Hvem er vi?</a>
                 </li>
                 <li class="drop-down"><span>Kontakt</span>
 
-                    <a href="kontakt.html">Find vej</a>
-                    <a href="kontakt.html">Åbningstider</a>
-                    <a href="kontakt.html">Telefonnummer</a>
+                    <a href="">Find vej</a>
+                    <a href="">Åbningstider</a>
+                    <a href="">Telefonnummer</a>
 
                 </li>
             </ul>
@@ -61,23 +61,23 @@
                 <li class="drop-down">
                     <a href="omOs.html">Om Os</a>
                     <div class="dropdown-content">
-                        <a href="omOs.html">Hvem er vi?</a>
+                        <a href="">Hvem er vi?</a>
                     </div>
                 </li>
                 <li class="drop-down"><a href="Undervisning.html">Undervisning</a>
                     <div class="dropdown-content">
-                        <a href="Undervisning.html">Børnehave</a>
-                        <a href="Undervisning.html">Grundskoleklasser</a>
-                        <a href="Undervisning.html">Gymnasium</a>
+                        <a href="">Børnehave</a>
+                        <a href="">Grundskoleklasser</a>
+                        <a href="">Gymnasium</a>
                     </div>
                 </li>
                 <li class="drop-down">
-                    <a href="index.html">Besøg Kalklandet</a>
+                    <a href="">Besøg Kalklandet</a>
                     <div class="dropdown-content">
-                        <a href="koldkrigsmuseum.html">Koldkrigsmuseum</a>
-                        <a href="stevnsklint.html">Stevns Klint</a>
-                        <a href="geomuseum.html">Geomuseum Faxe</a>
-                        <a href="stevnsnaturcenter.html">Stevns Naturcenter</a>
+                        <a href="">Koldkrigsmuseum</a>
+                        <a href="">Stevns Klint</a>
+                        <a href="">Geomuseum Faxe</a>
+                        <a href="">Stevns Naturcenter</a>
                     </div>
                 </li>
 
@@ -238,6 +238,24 @@
 
         }
 
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
         function toggleMenu() {
             document.querySelector("#mobile-nav").classList.toggle("hidden");
 
@@ -249,29 +267,6 @@
             } else {
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
-        }
-
-
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
 
         let undervisninger = [];

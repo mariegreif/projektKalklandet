@@ -217,9 +217,11 @@ span,
 /**************ATTRAKTIONER BOX***************/
 
 .besog,
-.besog1 {
+.besog1,
+.besog3 {
     text-align: center;
 }
+
 
 #attraktioner {
     display: grid;
@@ -732,6 +734,126 @@ footer {
 
 }
 
+/************STEVNSKLINT************/
+#sk-aabningstider {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsklint-%C3%A5bning.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sk-aktuelt {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsklint-aktuelt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sk-billetter {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsklint-billetter.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sk-findvej {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsklint-findvej.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+
+.text-box-sk {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+
+}
+
+.text-box-sk h3 {
+    grid-column-start: 2;
+    color: #008DB8;
+}
+
+
+/************STEVNSNATUR************/
+#sn-aabningstider {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsnatur-%C3%A5bning.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sn-aktuelt {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsnatur-aktuelt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sn-billetter {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsnatur-billetter.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#sn-findvej {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/stevnsnatur-findvej.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+
+.text-box-sn {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.text-box-sn h3 {
+    grid-column-start: 2;
+    color: #89B62D;
+}
+
 /************GEOMUSEUM************/
 
 .geo-aktuelt {}
@@ -783,7 +905,7 @@ footer {
     .besog {
         position: absolute;
         top: 15vw;
-        left: 24vw;
+        left: 25vw;
         color: white;
         font-size: 4vw;
     }
@@ -791,7 +913,15 @@ footer {
     .besog1 {
         position: absolute;
         top: 15vw;
-        left: 29vw;
+        left: 25vw;
+        color: white;
+        font-size: 4vw;
+    }
+
+    .besog3 {
+        position: absolute;
+        top: 15vw;
+        left: 25vw;
         color: white;
         font-size: 4vw;
     }
@@ -885,7 +1015,9 @@ footer {
 
     }
 
-    .text-box-kkm {
+    .text-box-kkm,
+    .text-box-sk,
+    .text-box-sn {
         grid-template-columns: auto 610px auto;
         max-width: 1200px;
     }
@@ -899,8 +1031,6 @@ footer {
         grid-column-start: 2;
         color: #387288;
     }
-
-
 
     .enkel {
         grid-template-columns: 1fr 1fr;
@@ -938,6 +1068,14 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
         margin-bottom: 0;
+    }
+
+    #omos-main {
+        margin-top: 0;
+    }
+
+    #kontakt-main {
+        margin-top: 0;
     }
 
 }
