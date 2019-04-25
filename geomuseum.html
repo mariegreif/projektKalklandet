@@ -122,20 +122,20 @@
     <h1 class="besog">GEOMUSEUM FAXE</h1>
     <div id="bannerIkoner">
         <a href="">
-            <div id="aabningstider" class="muse"></div>
+            <div id="aabningstider-geo" class="muse"></div>
         </a>
         <a href="">
-            <div id="aktuelt" class="muse"></div>
+            <div id="aktuelt-geo-ikon" class="muse"></div>
         </a>
         <a href="">
-            <div id="billetter" class="muse"></div>
+            <div id="billetter-geo" class="muse"></div>
         </a>
         <a href="">
-            <div id="findvej"></div>
+            <div id="findvej-geo" class="muse"></div>
         </a>
     </div>
 
-    <div class="text-box-kkm">
+    <div class="text-box-geo">
         <h3><i>"DET SJOVT OG MAN KAN LÆRE EN MASSE AF DET" NOAM, 2. KLASSE</i></h3>
         <p><b>Rejs tilbage i tiden til dengang Danmark var dækket af et dybt hav, og der voksede et stort koralrev, hvor Faxe ligger i dag. Her levede hajer og krokodiller sammen med mere end 500 andre slags dyr.</b>
             <br><br>
@@ -144,18 +144,18 @@
             Du kan også gå på fossiljagt i Faxe Kalkbrud og finde dine egne 63 millioner år gamle fossiler.</p>
     </div>
     <h1 class="geo-aktuelt">Aktuelt</h1>
-    <section class="aktuelt-section"></section>
+    <section class="aktuelt-section-geo"></section>
 
     <template id="aktuelt-geo">
-        <article class="enkel">
+        <article class="enkel-geo">
             <div class="column-left">
                 <h2></h2>
                 <p class="text1"></p>
                 <p class="text2"></p>
                 <p class="text3"></p>
-                <button class="kkm-btn">LÆS MERE</button>
+                <button class="geo-btn">LÆS MERE</button>
             </div>
-            <div class="column-right">
+            <div class="column-right-geo">
                 <img>
             </div>
         </article>
@@ -271,8 +271,8 @@
         }
 
         function visAktuelt() {
-            let dest = document.querySelector(".aktuelt-section");
-            let temp = document.querySelector("#aktuelt-kkm");
+            let dest = document.querySelector(".aktuelt-section-geo");
+            let temp = document.querySelector("#aktuelt-geo");
 
             undervisninger.forEach(aktuelt => {
 
@@ -287,6 +287,7 @@
 
             })
         }
+
     </script>
 </body>
 
