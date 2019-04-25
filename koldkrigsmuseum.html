@@ -122,16 +122,16 @@
     <h1 class="besog">KOLDKRIGSMUSEUM STEVNSFORT</h1>
     <div id="bannerIkoner">
         <a href="">
-            <div id="aabningstider" class="muse"></div>
+            <div id="aabningstider-kkm" class="muse"></div>
         </a>
         <a href="">
-            <div id="aktuelt" class="muse"></div>
+            <div id="aktuelt-kkm-ikon" class="muse"></div>
         </a>
         <a href="">
-            <div id="billetter" class="muse"></div>
+            <div id="billetter-kkm" class="muse"></div>
         </a>
         <a href="">
-            <div id="findvej"></div>
+            <div id="findvej-kkm"></div>
         </a>
     </div>
 
@@ -265,7 +265,7 @@
 
 
             //den hentede json filen skal tolkes som json
-            undervisninger = await myJson.json();
+            aktuelt = await myJson.json();
 
             //Kald funktionen som viser data i DOM
             visAktuelt();
@@ -274,15 +274,15 @@
         function visAktuelt() {
             let dest = document.querySelector(".aktuelt-section");
             let temp = document.querySelector("#aktuelt-kkm");
-
-            undervisninger.forEach(aktuelt => {
+            console.log(temp);
+            aktuelt.forEach(aktuel => {
 
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
-                klon.querySelector(".text1").innerHTML = aktuelt.text1;
-                klon.querySelector(".text2").innerHTML = aktuelt.text2;
-                klon.querySelector(".text3").innerHTML = aktuelt.text3;
-                klon.querySelector("img").src = aktuelt.billede.guid;
+                klon.querySelector("h2").innerHTML = aktuel.title.rendered;
+                klon.querySelector(".text1").innerHTML = aktuel.text1;
+                klon.querySelector(".text2").innerHTML = aktuel.text2;
+                klon.querySelector(".text3").innerHTML = aktuel.text3;
+                klon.querySelector("img").src = aktuel.billede.guid;
 
                 dest.appendChild(klon);
 
