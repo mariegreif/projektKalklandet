@@ -6,53 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalklandet</title>
     <link rel="stylesheet" href="index-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="bg-kkm">
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
-                <img src="img/logo_kalklandet.png" alt="logo">
-            </a></div>
+                <img src="img/museum-logo/header-seneste-lang.svg" alt="logo">
+            </a>
+        </div>
         <nav>
             <div id="menuknap-mobile">☰</div>
             <ul id="mobile-nav" class="hidden">
                 <li class="drop-down">
                     <span>Besøg Kalklandet</span>
-                    <div class="dropdown-content">
-                        <a href="">Koldkrigsmuseum</a>
-                        <a href="">Stevns Klint</a>
-                        <a href="">Geomuseum Faxe</a>
-                        <a href="">Stevns Naturcenter</a>
-                    </div>
+                    <a href="">Koldkrigsmuseum</a>
+                    <a href="">Stevns Klint</a>
+                    <a href="">Geomuseum Faxe</a>
+                    <a href="">Stevns Naturcenter</a>
+
                 </li>
                 <li class="drop-down"><span>Undervisning</span>
-                    <div class="dropdown-content">
-                        <a href="">Børnehave</a>
-                        <a href="">Grundskoleklasser</a>
-                        <a href="">Gymnasium</a>
-                    </div>
+                    <a href="">Børnehave</a>
+                    <a href="">Grundskoleklasser</a>
+                    <a href="">Gymnasium</a>
                 </li>
 
                 <li class="drop-down">
                     <span>Om Os</span>
-                    <div class="dropdown-content">
-                        <a href="">Hvem er vi?</a>
-                    </div>
+                    <a href="">Hvem er vi?</a>
                 </li>
                 <li class="drop-down"><span>Kontakt</span>
-                    <div class="dropdown-content">
-                        <a href="">Find vej</a>
-                        <a href="">Åbningstider</a>
-                        <a href="">Telefonnummer</a>
-                    </div>
+
+                    <a href="">Find vej</a>
+                    <a href="">Åbningstider</a>
+                    <a href="">Telefonnummer</a>
+
                 </li>
             </ul>
 
             <ul id="desktop">
+                <li class="drop-down"><a href="kontakt.html">Kontakt</a>
+                    <div class="dropdown-content">
+                        <a href="">Find vej</a>
+                        <a href="">Åbningstider</a>
+                        <a href="">Telefonnummer</a>
+                    </div>
+
+                </li>
                 <li class="drop-down">
-                    <span>Besøg Kalklandet</span>
+                    <a href="omOs.html">Om Os</a>
+                    <div class="dropdown-content">
+                        <a href="">Hvem er vi?</a>
+                    </div>
+                </li>
+                <li class="drop-down"><a href="Undervisning.html">Undervisning</a>
+                    <div class="dropdown-content">
+                        <a href="">Børnehave</a>
+                        <a href="">Grundskoleklasser</a>
+                        <a href="">Gymnasium</a>
+                    </div>
+                </li>
+                <li class="drop-down">
+                    <a href="">Besøg Kalklandet</a>
                     <div class="dropdown-content">
                         <a href="">Koldkrigsmuseum</a>
                         <a href="">Stevns Klint</a>
@@ -60,69 +77,135 @@
                         <a href="">Stevns Naturcenter</a>
                     </div>
                 </li>
-                <li class="drop-down"><span>Undervisning</span>
-                    <div class="dropdown-content">
-                        <a href="">Børnehave</a>
-                        <a href="">Grundskoleklasser</a>
-                        <a href="">Gymnasium</a>
-                    </div>
-                </li>
 
-                <li class="drop-down">
-                    <span>Om Os</span>
-                    <div class="dropdown-content">
-                        <a href="">Hvem er vi?</a>
-                    </div>
-                </li>
-                <li class="drop-down"><span>Kontakt</span>
-                    <div class="dropdown-content">
-                        <a href="">Find vej</a>
-                        <a href="">Åbningstider</a>
-                        <a href="">Telefonnummer</a>
-                    </div>
-                </li>
             </ul>
+
         </nav>
+
     </header>
 
-    <main>
-        <div class="background-img">
-            <img src="img/stevnsklint.jpg">
-            <text-box>
-                <h1>Geomuseum Faxe</h1>
-                <p>about</p>
-            </text-box>
 
-            <div class="bannerIkoner">
-                <div class="box-aabningstider">
-                    <a href=""></a>
-                </div>
-                <div class="box-program">
-                    <a href=""></a>
-                </div>
-                <div class="box-findvej">
-                    <a href=""></a>
-                </div>
-                <div class="box-billetter">
-                    <a href=""></a>
-                </div>
+    <div class="slideshow-container">
+        <div id="forside-content" class="hidden">
+            <h1 class="overskrift">
+            </h1>
+            <p class="indhold">
+            </p>
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="img/splash-desktop1.png">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/splash-desktop2.png">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/splash-desktop3.png">
+
+        </div>
+
+    </div>
+
+
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <h1 class="besog">GEOMUSEUM FAXE</h1>
+    <div id="bannerIkoner">
+        <a href="">
+            <div id="aabningstider" class="muse"></div>
+        </a>
+        <a href="">
+            <div id="aktuelt" class="muse"></div>
+        </a>
+        <a href="">
+            <div id="billetter" class="muse"></div>
+        </a>
+        <a href="">
+            <div id="findvej"></div>
+        </a>
+    </div>
+
+    <div class="text-box-kkm">
+        <h3><i>"DET SJOVT OG MAN KAN LÆRE EN MASSE AF DET" NOAM, 2. KLASSE</i></h3>
+        <p><b>Rejs tilbage i tiden til dengang Danmark var dækket af et dybt hav, og der voksede et stort koralrev, hvor Faxe ligger i dag. Her levede hajer og krokodiller sammen med mere end 500 andre slags dyr.</b>
+            <br><br>
+            På Geomuseum Faxe kan du se den dramatiske historie om den sidste store masseuddøden, der hændte for 66 millioner år siden. Du får også fortællingen om hvordan livet rejste sig på ny og dannede det unikke koralrev.
+            <br><br>
+            Du kan også gå på fossiljagt i Faxe Kalkbrud og finde dine egne 63 millioner år gamle fossiler.</p>
+    </div>
+    <h1 class="geo-aktuelt">Aktuelt</h1>
+    <section class="aktuelt-section"></section>
+
+    <template id="aktuelt-geo">
+        <article class="enkel">
+            <div class="column-left">
+                <h2></h2>
+                <p class="text1"></p>
+                <p class="text2"></p>
+                <p class="text3"></p>
+                <button class="kkm-btn">LÆS MERE</button>
             </div>
-        </div>
-    </main>
+            <div class="column-right">
+                <img>
+            </div>
+        </article>
+    </template>
 
-    <section>
-        <h1>Aktuelt på Geomuseum Faxe</h1>
-        <text></text>
-        <figure></figure>
-    </section>
 
-    <footer>
-        <p>Kontakt English Deutsch</p>
-        <div class="some">
-            <a href="" class="fa fa-facebook"></a>
-            <a href="" class="fa fa-instagram"></a>
-        </div>
+
+
+    <footer class="flex-rw">
+
+        <ul class="footer-list-top">
+            <li>
+                <h3 class="footer-list-header">BESØG</h3>
+            </li>
+            <li><a href="stevnsklint.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">STEVNSKLINT</a></li>
+            <li><a href="koldkrigsmuseum.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">KOLDKRIGSMUSEUM</a></li>
+            <li><a href="geomuseum.html" class="generic-anchor footer-list-anchor" itemprop="significantLink">GEOMUSEUM</a></li>
+
+            <li><a href="stevnsnaturcenter.html" itemprop="significantLink" class="generic-anchor footer-list-anchor">STEVNS NATURCENTER</a></li>
+        </ul>
+        <ul class="footer-list-top">
+            <li>
+                <h3 class="footer-list-header">KONTAKT</h3>
+
+
+                <p>
+                    Østsjællands Museum<br>
+                    Rådhusvej 2<br>
+                    4640 Faxe <br><br>
+                    Telefon +45 56 50 28 06<br> Telefonen er åben mandag til fredag<br>
+                    fra kl. 9.00 til 15.00<br><br>
+                    museum@oesm.dk
+                </p>
+            </li>
+        </ul>
+        <ul class="footer-list-top">
+            <li id='help'>
+                <h3 class="footer-list-header">FØLG OS</h3>
+            </li>
+            <span class="footer-social-overlap">
+                <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+            </span><br><br><br><br><br>
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Search..." />
+            </div>
+        </ul>
     </footer>
+
 
     <script>
         window.addEventListener("load", sidenVises);
@@ -146,6 +229,64 @@
             }
         }
 
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
+        let aktuelt = [];
+        let filter = "alle";
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        //hent JSON fil i asynkron funktion
+        async function hentJson() {
+            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/geomuseum_faxe";
+
+            //henter data filen
+            const myJson = await fetch(url);
+
+
+            //den hentede json filen skal tolkes som json
+            undervisninger = await myJson.json();
+
+            //Kald funktionen som viser data i DOM
+            visAktuelt();
+        }
+
+        function visAktuelt() {
+            let dest = document.querySelector(".aktuelt-section");
+            let temp = document.querySelector("#aktuelt-kkm");
+
+            undervisninger.forEach(aktuelt => {
+
+                let klon = temp.cloneNode(true).content;
+                klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
+                klon.querySelector(".text1").innerHTML = aktuelt.text1;
+                klon.querySelector(".text2").innerHTML = aktuelt.text2;
+                klon.querySelector(".text3").innerHTML = aktuelt.text3;
+                klon.querySelector("img").src = aktuelt.billede.guid;
+
+                dest.appendChild(klon);
+
+            })
+        }
     </script>
 </body>
 
