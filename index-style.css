@@ -99,6 +99,7 @@ span,
     color: white;
     text-decoration: none;
     padding: 1vw;
+    font-family: 'Limestone';
 }
 
 
@@ -153,7 +154,7 @@ span,
     text-transform: uppercase;
     list-style-type: none;
     font-size: 1.5vw;
-    transition:
+    font-family: 'Limestone';
 }
 
 #desktop .dropdown-content {
@@ -420,7 +421,7 @@ span,
 
 }
 
-article img {
+forside-data img {
     width: 90%;
 }
 
@@ -551,6 +552,7 @@ footer {
 .footer-list-top a {
     text-decoration: none;
     color: white;
+    font-family: 'Limestone';
 }
 
 .footer-list-header {
@@ -634,41 +636,41 @@ footer {
     /*    background-color: #D7DCE2;*/
 }
 
-#aabningstider {
+#aabningstider-kkm {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/%C3%A5bningstider.svg);
+    background-image: url(img/ikoner/koldkrig-a%CC%8Abning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
-#aktuelt {
+#aktuelt-kkm-ikon {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/aktuelt.svg);
+    background-image: url(img/ikoner/koldkrig-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
-#billetter {
+#billetter-kkm {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/billetter.svg);
+    background-image: url(img/ikoner/koldkrig-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
-#findvej {
+#findvej-kkm {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/findvej.svg);
+    background-image: url(img/ikoner/koldkrig-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
@@ -692,6 +694,7 @@ footer {
     max-width: 1200px;
     border-bottom-style: solid;
     border-bottom-width: thin;
+    color: #387288;
 
 }
 
@@ -856,8 +859,97 @@ footer {
 
 /************GEOMUSEUM************/
 
-.geo-aktuelt {}
+#aabningstider-geo {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/geo-a%CC%8Abning.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
 
+#aktuelt-geo-ikon {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/geo-aktuelt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#billetter-geo {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/geo-billetter.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#findvej-geo {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/geo-findvej.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+.enkel-geo {
+    background-color: #0DA6A4;
+    color: #D9EDEC;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+.geo-aktuelt {
+    margin-left: 2vw;
+    color: #0DA6A4;
+}
+
+.text-box-geo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    color: #0DA6A4;
+}
+
+.enkel-geo img {
+    max-width: 80%;
+    float: right;
+}
+
+.geo-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #D9EDEC;
+    color: #0DA6A4;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.geo-btn:hover {
+    transform: scale(1.1);
+
+}
 
 /************ MEDIA QUERIES DESKTOP ******************/
 @media only screen and (min-width: 1160px) {
@@ -1024,7 +1116,7 @@ footer {
 
     .text-box-kkm p {
         grid-column-start: 2;
-        color: #387288;
+
     }
 
     .text-box-kkm h3 {
@@ -1032,15 +1124,42 @@ footer {
         color: #387288;
     }
 
+<<<<<<< HEAD
+=======
+    .text-box-geo {
+        grid-template-columns: auto 610px auto;
+        max-width: 1200px;
+    }
+
+    .text-box-geo h3 {
+        grid-column-start: 2;
+    }
+
+    .text-box-geo p {
+        grid-column-start: 2;
+    }
+
+>>>>>>> origin/master
     .enkel {
         grid-template-columns: 1fr 1fr;
 
     }
 
+    .enkel-geo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
     .column-right {
         justify-self: end;
         border-style: none;
         padding-right: 5vw;
+    }
+
+    .column-right-geo {
+        justify-self: end;
+        border-style: none;
+        float: right
     }
 
     .tekst-omos {
@@ -1070,6 +1189,7 @@ footer {
         margin-bottom: 0;
     }
 
+<<<<<<< HEAD
     #omos-main {
         margin-top: 0;
     }
@@ -1077,5 +1197,7 @@ footer {
     #kontakt-main {
         margin-top: 0;
     }
+=======
+>>>>>>> origin/master
 
 }
