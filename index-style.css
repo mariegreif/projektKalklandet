@@ -640,7 +640,7 @@ footer {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/koldkrig-a%CC%8Abning.svg);
+    background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
@@ -897,17 +897,17 @@ footer {
 /************GEOMUSEUM************/
 
 #aabningstider-geo {
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid #0DA6A4;
     width: 150px;
     height: 155px;
-    background-image: url(img/ikoner/geo-a%CC%8Abning.svg);
+    background-image: url(img/ikoner/geo-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 
 #aktuelt-geo-ikon {
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid #0DA6A4;
     width: 150px;
     height: 155px;
     background-image: url(img/ikoner/geo-aktuelt.svg);
@@ -917,7 +917,7 @@ footer {
 }
 
 #billetter-geo {
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid #0DA6A4;
     width: 150px;
     height: 155px;
     background-image: url(img/ikoner/geo-billetter.svg);
@@ -927,7 +927,7 @@ footer {
 }
 
 #findvej-geo {
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid #0DA6A4;
     width: 150px;
     height: 155px;
     background-image: url(img/ikoner/geo-findvej.svg);
@@ -1033,18 +1033,26 @@ footer {
 
     .besog {
         position: absolute;
-        top: 15vw;
-        left: 25vw;
+        top: 20vw;
+        left: 15vw;
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .besog1 {
         position: absolute;
-        top: 15vw;
+        top: 10vw;
         left: 25vw;
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
+    }
+
+    .besog2 {
+        position: absolute;
+        top: 20vw;
+        left: 30vw;
+        color: white;
+        font-size: 5vw;
     }
 
     .besog3 {
@@ -1052,7 +1060,7 @@ footer {
         top: 15vw;
         left: 25vw;
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     #forside-content {
@@ -1138,7 +1146,7 @@ footer {
         padding: 1em 1em 0;
         position: absolute;
         top: 30vw;
-        left: 15vw;
+        left: 20vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
 
@@ -1174,7 +1182,8 @@ footer {
         grid-column-start: 2;
     }
 
-        {
+
+    .enkel {
         grid-template-columns: 1fr 1fr;
 
     }
@@ -1230,13 +1239,13 @@ footer {
         margin-bottom: 0;
     }
 
+
     #omos-main {
+
         margin-top: 0;
     }
 
     #kontakt-main {
         margin-top: 0;
     }
-
-
 }
