@@ -731,9 +731,8 @@ footer {
 
 }
 
-.kkm-btn {
+.kkm-btn:hover {
     transform: scale(1.1);
-
 }
 
 /************STEVNSKLINT************/
@@ -796,6 +795,44 @@ footer {
     color: #008DB8;
 }
 
+.enkel-sk {
+    background-color: #008DB8;
+    color: #CFE3EE;
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+.enkel-sk img {
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.sk-aktuelt {
+    margin-left: 2vw;
+    color: #008DB8;
+}
+
+.sk-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #CFE3EE;
+    color: #008DB8;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.sk-btn:hover {
+    transform: scale(1.1);
+}
+
 
 /************STEVNSNATUR************/
 #sn-aabningstider {
@@ -849,11 +886,50 @@ footer {
     max-width: 1200px;
     border-bottom-style: solid;
     border-bottom-width: thin;
+
 }
 
 .text-box-sn h3 {
     grid-column-start: 2;
-    color: #89B62D;
+    color: #92BA53;
+}
+
+.enkel-sn {
+    background-color: #92BA53;
+    color: #EAF2D4;
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-style: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+.enkel-sn img {
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.sn-aktuelt {
+    margin-left: 2vw;
+    color: #92BA53;
+}
+
+.sn-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #EAF2D4;
+    color: #92BA53;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.sn-btn:hover {
+    transform: scale(1.1);
 }
 
 /************GEOMUSEUM************/
@@ -1003,7 +1079,7 @@ footer {
 
     .besog1 {
         position: absolute;
-        top: 20vw;
+        top: 10vw;
         left: 25vw;
         color: white;
         font-size: 5vw;
@@ -1144,12 +1220,15 @@ footer {
         grid-column-start: 2;
     }
 
+
     .enkel {
         grid-template-columns: 1fr 1fr;
 
     }
 
-    .enkel-geo {
+    .enkel-geo,
+    .enkel-sk,
+    .enkel-sn {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1163,8 +1242,21 @@ footer {
     .column-right-geo {
         justify-self: end;
         border-style: none;
-        float: right
+        float: right;
     }
+
+    .column-right-sk {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
+    .column-right-sn {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
 
     .tekst-omos {
         padding: 2em 2em 2em;
@@ -1193,13 +1285,13 @@ footer {
         margin-bottom: 0;
     }
 
-    <<<<<<< HEAD #omos-main {
+
+    #omos-main {
+
         margin-top: 0;
     }
 
     #kontakt-main {
         margin-top: 0;
     }
-
-    ======= > > > > > > > origin/master
 }
