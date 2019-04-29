@@ -34,7 +34,6 @@ forside-data img {
 
 
 #folkeskole-ikon {
-    /*    border: 0.5px solid lightgrey;*/
     width: 100px;
     height: 105px;
     background-image: url(img/ikoner/folkeskole-dark.svg);
@@ -44,7 +43,6 @@ forside-data img {
 }
 
 #gymnasium-ikon {
-    /*    border: 0.5px solid lightgrey;*/
     width: 100px;
     height: 105px;
     background-image: url(img/ikoner/gymnasium-dark.svg);
@@ -183,6 +181,7 @@ article {
         color: white;
         font-size: 5vw;
     }
+
 
     #forside-content {
         display: block;

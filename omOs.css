@@ -1,4 +1,24 @@
 /*************OM-OS-SIDEN*******************/
+
+.tekst-omos {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em 1em 1em;
+    position: absolute;
+    top: 60vw;
+    justify-content: center;
+    margin-top: 10vw;
+    max-width: 500px;
+    margin: 1vw;
+    color: #776B5F;
+
+}
+
+
+#omos-main {
+    margin-top: 125vw;
+}
+
 .omos {
     text-decoration: none;
     padding: 10px 10px;
@@ -15,21 +35,6 @@
 
 .omos:hover {
     transform: scale(1.1);
-}
-
-
-.tekst-omos {
-    padding: 1em 1em 1em;
-    position: absolute;
-    top: 60vw;
-    justify-content: center;
-    margin-top: 10vw;
-    max-width: 500px;
-    margin: 1vw
-}
-
-#omos-main {
-    margin-top: 125vw;
 }
 
 
@@ -284,18 +289,17 @@
     .tekst-omos {
         padding: 2em 2em 2em;
         position: absolute;
-        top: 12vw;
-        margin: 5vw;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
+        top: 6vw;
+        background-color: rgba(119, 107, 95, 0.72);
         color: white;
-
+        left: 25vw;
     }
 
 
     #omos-main {
-
         margin-top: 0;
+        grid-template-columns: auto 600px auto;
+        grid-column-start: 2;
     }
 
     #kontakt-main {
