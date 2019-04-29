@@ -272,16 +272,16 @@
 
     .besog {
         position: absolute;
-        top: 20vw;
-        left: 15vw;
+        left: 18vw;
+        top: 12vw;
         color: white;
         font-size: 5vw;
     }
 
     .besog1 {
         position: absolute;
-        top: 10vw;
-        left: 25vw;
+        left: 17vw;
+        top: 12vw;
         color: white;
         font-size: 5vw;
 
@@ -297,8 +297,8 @@
 
     .besog3 {
         position: absolute;
-        top: 15vw;
-        left: 25vw;
+        left: 35.5vw;
+        top: 12vw;
         color: white;
         font-size: 5vw;
     }

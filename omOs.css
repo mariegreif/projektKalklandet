@@ -1,5 +1,9 @@
 /*************OM-OS-SIDEN*******************/
 
+h1 {
+    text-align: center;
+}
+
 .tekst-omos {
     display: grid;
     grid-template-columns: 1fr;

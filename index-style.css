@@ -460,8 +460,9 @@ footer {
 
     .besog {
         position: absolute;
-        top: 20vw;
-        left: 15vw;
+        left: 19vw;
+        top: 12vw;
+        text-align: center;
         color: white;
         font-size: 5vw;
     }
