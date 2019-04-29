@@ -35,14 +35,14 @@
 
 .sn-aabning-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sn-aabningstider-ikon:hover .sn-overlay {
@@ -76,14 +76,14 @@
 
 .sn-aktuelt-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sn-aktuelt-ikon:hover .sn-overlay2 {
@@ -117,14 +117,14 @@
 
 .sn-billetter-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sn-billetter:hover .sn-overlay3 {
@@ -156,14 +156,14 @@
 
 .sn-findvej-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sn-findvej:hover .sn-overlay4 {
@@ -499,5 +499,25 @@
 
     #tekst-omos {
         margin-left: 10vw;
+    }
+
+    .sn-aabning-text {
+        font-size: 1vw;
+    }
+
+    .sn-aktuelt-text {
+        font-size: 1.1vw;
+
+    }
+
+
+    .sn-billetter-text {
+        font-size: 1.1vw;
+
+    }
+
+    .sn-findvej-text {
+        font-size: 1.1vw;
+
     }
 }

@@ -34,14 +34,14 @@
 
 .aabning-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #aabningstider-kkm:hover .kkm-overlay {
@@ -75,14 +75,14 @@
 
 .aktuelt-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #aktuelt-kkm-ikon:hover .kkm-overlay2 {
@@ -112,14 +112,14 @@
 
 .billetter-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #billetter-kkm:hover .kkm-overlay3 {
@@ -154,14 +154,14 @@
 
 .findvej-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #findvej-kkm:hover .kkm-overlay4 {
@@ -507,5 +507,25 @@
 
     #tekst-omos {
         margin-left: 10vw;
+    }
+
+    .aabning-text {
+        font-size: 1vw;
+    }
+
+    .aktuelt-text {
+        font-size: 1.1vw;
+
+    }
+
+
+    .billetter-text {
+        font-size: 1.1vw;
+
+    }
+
+    .findvej-text {
+        font-size: 1.1vw;
+
     }
 }

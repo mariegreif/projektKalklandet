@@ -35,14 +35,14 @@
 
 .geo-aabning-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #aabningstider-geo:hover .geo-overlay {
@@ -73,14 +73,14 @@
 
 .geo-aktuelt-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #aktuelt-geo-ikon:hover .geo-overlay2 {
@@ -111,14 +111,14 @@
 
 .geo-billetter-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #billetter-geo:hover .geo-overlay3 {
@@ -149,14 +149,14 @@
 
 .geo-findvej-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #findvej-geo:hover .geo-overlay4 {
@@ -484,5 +484,29 @@
 
     #tekst-omos {
         margin-left: 10vw;
+    }
+
+    .geo-aabning-text {
+        color: white;
+        font-size: 1vw;
+    }
+
+    .geo-aktuelt-text {
+        color: white;
+        font-size: 1.1vw;
+
+    }
+
+
+    .geo-billetter-text {
+        color: white;
+        font-size: 1.1vw;
+
+    }
+
+    .geo-findvej-text {
+        color: white;
+        font-size: 1.1vw;
+
     }
 }

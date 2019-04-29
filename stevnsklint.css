@@ -33,14 +33,14 @@
 
 .sk-aabning-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sk-aabningstider-ikon:hover .sk-overlay {
@@ -73,14 +73,14 @@
 
 .sk-aktuelt-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sk-aktuelt-ikon:hover .sk-overlay2 {
@@ -115,14 +115,14 @@
 
 .sk-billetter-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sk-billetter-ikon:hover .sk-overlay3 {
@@ -155,14 +155,14 @@
 
 .sk-findvej-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #sk-findvej-ikon:hover .sk-overlay4 {
@@ -499,5 +499,25 @@
 
     #tekst-omos {
         margin-left: 10vw;
+    }
+
+    .sk-aabning-text {
+        font-size: 1vw;
+    }
+
+    .sk-aktuelt-text {
+        font-size: 1.1vw;
+
+    }
+
+
+    .sk-billetter-text {
+        font-size: 1.1vw;
+
+    }
+
+    .sk-findvej-text {
+        font-size: 1.1vw;
+
     }
 }

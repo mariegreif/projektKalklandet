@@ -48,14 +48,14 @@ h1 {
 
 .kontakt-adresse-text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #adresse-ikon:hover .adresse-overlay {
@@ -88,14 +88,14 @@ h1 {
 
 .kontakt-aebningstider-text {
     color: white;
-    font-size: 20px;
+    font-size: 2.1vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #aebningstider-ikon:hover .aebningstider-overlay {
@@ -128,14 +128,14 @@ h1 {
 
 .kontakt-telefonnummer-text {
     color: white;
-    font-size: 20px;
+    font-size: 2.4vw;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 #telfonnummer-ikon:hover .telefonnummer-overlay {
@@ -158,6 +158,21 @@ h1 {
         display: grid;
         grid-template-columns: auto auto auto;
         margin-bottom: 0;
+    }
+
+    .kontakt-telefonnummer-text {
+        color: white;
+        font-size: 1vw;
+    }
+
+    .kontakt-aebningstider-text {
+        color: white;
+        font-size: 1vw;
+    }
+
+    .kontakt-adresse-text {
+        color: white;
+        font-size: 1vw;
     }
 }
 
