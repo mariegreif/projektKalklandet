@@ -177,7 +177,7 @@ span,
 #desktop .drop-down:hover {
     color: orange;
     cursor: pointer;
-    transform: scale(2vw)
+    transform: scale(2vw);
 }
 
 #desktop .drop-down a::after {
@@ -195,8 +195,8 @@ span,
 #desktop .drop-down a:hover::after {
     width: 100%;
     //transition: width .3s;
-
 }
+
 
 
 #forside-content {
