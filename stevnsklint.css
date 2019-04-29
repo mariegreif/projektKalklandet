@@ -177,23 +177,26 @@
     margin-bottom: 5vw;
     margin-left: 2vw;
     max-width: 1200px;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
 
 }
 
-.text-box-sk h3 {
+#headline-aktuelt {
+    color: #0083AD;
+    margin: 1vw;
+    margin-left: 5vw;
+}
+
+.text-box-sk p {
     grid-column-start: 2;
     color: #008DB8;
 }
 
 .enkel-sk {
-    background-color: #008DB8;
-    color: #CFE3EE;
+    border-top: 1px solid #008DB8;
+    color: #008DB8;
     padding: 4vw;
     display: grid;
     grid-template-columns: 1fr;
-    border-bottom-style: 1px solid black;
     margin-bottom: 2vw;
 }
 
@@ -212,8 +215,8 @@
     text-decoration: none;
     padding: 10px 45px;
     margin-bottom: 1.5vw;
-    background-color: #CFE3EE;
-    color: #008DB8;
+    background-color: #008DB8;
+    color: #CFE3EE;
     border: none;
     cursor: pointer;
     transition: transform .1s;

@@ -217,8 +217,10 @@
 }
 
 #kkm-aktuelt {
-    margin-left: 2vw;
     color: #387288;
+    margin: 1vw;
+    margin-left: 5vw;
+
 }
 
 .kkm-btn {
@@ -412,15 +414,6 @@
     .text-box {
         grid-template-columns: auto auto;
 
-    }
-
-    .text-box .uv-intro {
-        grid-column-start: 1;
-
-    }
-
-    .text-box .hurtig-info {
-        grid-column-start: 2;
     }
 
     .text-box-kkm,

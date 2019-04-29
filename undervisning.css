@@ -53,23 +53,33 @@ forside-data img {
     margin: 1em 1em 1em 0;
 }
 
-.uv-intro,
-.hurtig-info {
+.intro-text-uv {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
     color: #776B5F;
-    line-height: 1.5;
+
+}
+
+.intro-text-uv button {
+    margin: 2vw 0;
 }
 
 #sectioner-uv {
     display: grid;
     padding: 1em;
     grid-template-columns: auto;
-    text-align: center;
+
     margin-bottom: 10vw;
 }
 
 article {
     /*    background-color: #A59B91;*/
-    color: white;
+    color: #776B5F;
 }
 
 #section-bornehave,
@@ -265,11 +275,13 @@ article {
 
     }
 
-    .text-box {
-        grid-template-columns: auto auto;
+    .intro-text-uv {
+        grid-template-columns: auto 600px auto;
+        grid-column-start: 2;
 
     }
 
+    /*
     .text-box .uv-intro {
         grid-column-start: 1;
 
@@ -278,6 +290,9 @@ article {
     .text-box .hurtig-info {
         grid-column-start: 2;
     }
+*/
+
+
 
     .text-box-kkm,
     .text-box-sk,
@@ -301,13 +316,16 @@ article {
         max-width: 1200px;
     }
 
-    .text-box-geo h3 {
+
+    .text-box-geo h3,
+    p {
         grid-column-start: 2;
     }
 
     .text-box-geo p {
         grid-column-start: 2;
     }
+
 
 
     .enkel {
@@ -346,29 +364,4 @@ article {
         float: right;
     }
 
-
-    .tekst-omos {
-        padding: 2em 2em 2em;
-        position: absolute;
-        top: 12vw;
-        margin: 5vw;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
-        color: white;
-
-    }
-
-
-    #omos-main {
-
-        margin-top: 0;
-    }
-
-    #kontakt-main {
-        margin-top: 0;
-    }
-
-    #tekst-omos {
-        margin-left: 10vw;
-    }
 }

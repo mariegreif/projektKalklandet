@@ -165,8 +165,8 @@
 
 
 .enkel-geo {
-    background-color: #0DA6A4;
-    color: #D9EDEC;
+    border-top: 1px solid #0DA6A4;
+    color: #0DA6A4;
     padding: 2vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -187,8 +187,6 @@
     margin-bottom: 5vw;
     margin-left: 2vw;
     max-width: 1200px;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
     color: #0DA6A4;
 }
 
@@ -201,8 +199,8 @@
     text-decoration: none;
     padding: 10px 45px;
     margin-bottom: 1.5vw;
-    background-color: #D9EDEC;
-    color: #0DA6A4;
+    background-color: #0DA6A4;
+    color: #D9EDEC;
     border: none;
     cursor: pointer;
     transition: transform .1s;
