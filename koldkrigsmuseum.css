@@ -1,0 +1,516 @@
+/***********KOLDKRIGSMUSEUM***********/
+
+#bannerIkoner {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-bottom: 10vw;
+
+}
+
+#aabningstider-kkm {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+    position: relative;
+}
+
+.kkm-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #387288;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+#aktuelt-kkm-ikon {
+    border: 0.5px solid lightgrey;
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+    position: relative;
+}
+
+.kkm-overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #387288;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+
+.aktuelt-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#aktuelt-kkm-ikon:hover .kkm-overlay2 {
+    height: 100%;
+}
+
+.aabning-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#aabningstider-kkm:hover .kkm-overlay {
+    height: 100%;
+}
+
+#aktuelt-kkm-ikon {
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/koldkrig-aktuelt.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#billetter-kkm-ikon {
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/koldkrig-billetter.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+    position: relative;
+}
+
+.billetter-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#billetter-kkm:hover .kkm-overlay3 {
+    height: 100%;
+}
+
+.kkm-overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #387288;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+
+
+
+#findvej-kkm-ikon {
+    width: 150px;
+    height: 155px;
+    background-image: url(img/ikoner/koldkrig-findvej.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1em;
+    position: relative;
+}
+
+.findvej-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#findvej-kkm:hover .kkm-overlay4 {
+    height: 100%;
+}
+
+.kkm-overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #387288;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+.text-box-kkm {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    max-width: 1200px;
+    color: #387288;
+
+}
+
+.enkel {
+    /*    background-color: #387288;*/
+    color: #387288;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2vw;
+    border-top: 1px solid #387288;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.column-right {
+    justify-self: center;
+}
+
+.enkel img {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+
+}
+
+#kkm-aktuelt {
+    margin-left: 2vw;
+    color: #387288;
+}
+
+.kkm-btn {
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-bottom: 1.5vw;
+    background-color: #387288;
+    color: #D7DCE2;
+    border: none;
+    cursor: pointer;
+    transition: transform .1s;
+    font-size: 15px;
+
+}
+
+.kkm-btn:hover {
+    transform: scale(1.1);
+}
+
+.column-left .kkm-btn {
+    justify-self: center;
+    place-self: center;
+}
+
+/************ MEDIA QUERIES DESKTOP ******************/
+@media only screen and (min-width: 1160px) {
+
+    #logo-kalklandet img {
+        width: 110%;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+
+    #desktop {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2010;
+        float: right;
+
+    }
+
+    #desktop .drop-down {
+        color: white;
+        background-color: #776B5F;
+    }
+
+    #menuknap-mobile {
+        display: none;
+    }
+
+
+    #attraktioner {
+        position: absolute;
+        top: 28vw;
+        left: 15vw;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: center;
+        /*        background-color: rgba(0, 0, 0, 0.38);*/
+    }
+
+
+    .besog {
+        position: absolute;
+        top: 20vw;
+        left: 15vw;
+        color: white;
+        font-size: 5vw;
+    }
+
+    .besog1 {
+        position: absolute;
+        top: 10vw;
+        left: 25vw;
+        color: white;
+        font-size: 5vw;
+
+    }
+
+    .besog2 {
+        position: absolute;
+        top: 20vw;
+        left: 30vw;
+        color: white;
+        font-size: 5vw;
+    }
+
+    .besog3 {
+        position: absolute;
+        top: 15vw;
+        left: 25vw;
+        color: white;
+        font-size: 5vw;
+    }
+
+    #forside-content {
+        display: block;
+    }
+
+
+    #stevnsnaturcenter {
+        width: 180px;
+        height: 185px;
+        background-image: url(img/museum-logo/stevns-natur.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 1em;
+    }
+
+    #geomuseum {
+        width: 180px;
+        height: 185px;
+        margin: 1em;
+    }
+
+    #stevnsklint {
+        width: 180px;
+        height: 185px;
+        margin: 1em;
+    }
+
+    #koldkrigsmuseum {
+        width: 180px;
+        height: 185px;
+        margin: 1em;
+    }
+
+    #ikoner-alle {
+        padding: 1em 1em 0;
+        position: absolute;
+        top: 28vw;
+        left: 24vw;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        /*        background-color: rgba(0, 0, 0, 0.38);*/
+    }
+
+    #bornehave-ikon {
+        width: 180px;
+        height: 185px;
+    }
+
+    #folkeskole-ikon {
+        width: 180px;
+        height: 185px;
+    }
+
+    #gymnasium-ikon {
+        width: 180px;
+        height: 185px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .ny_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer.flex-rw {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .footer-social-overlap i {
+        font-size: 3.5vw;
+    }
+
+    .footer-list-header {
+        font-size: 2em;
+    }
+
+    #bannerIkoner {
+        padding: 1em 1em 0;
+        position: absolute;
+        top: 30vw;
+        left: 20vw;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+
+    }
+
+    .text-box {
+        grid-template-columns: auto auto;
+
+    }
+
+    .text-box .uv-intro {
+        grid-column-start: 1;
+
+    }
+
+    .text-box .hurtig-info {
+        grid-column-start: 2;
+    }
+
+    .text-box-kkm,
+    .text-box-sk,
+    .text-box-sn {
+        grid-template-columns: auto 610px auto;
+        max-width: 1200px;
+    }
+
+    .text-box-kkm p {
+        grid-column-start: 2;
+
+    }
+
+    .text-box-kkm h3 {
+        grid-column-start: 2;
+        color: #387288;
+    }
+
+    .text-box-geo {
+        grid-template-columns: auto 610px auto;
+        max-width: 1200px;
+    }
+
+    .text-box-geo h3 {
+        grid-column-start: 2;
+    }
+
+    .text-box-geo p {
+        grid-column-start: 2;
+    }
+
+
+    .enkel {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .enkel-geo,
+    .enkel-sk,
+    .enkel-sn {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .column-right {
+        justify-self: end;
+        border-style: none;
+        padding-right: 5vw;
+    }
+
+    .column-right-geo {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
+    .column-right-sk {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
+    .column-right-sn {
+        justify-self: end;
+        border-style: none;
+        float: right;
+    }
+
+
+    .tekst-omos {
+        padding: 2em 2em 2em;
+        position: absolute;
+        top: 12vw;
+        margin: 5vw;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.38);
+        color: white;
+
+    }
+
+
+    #omos-main {
+
+        margin-top: 0;
+    }
+
+    #kontakt-main {
+        margin-top: 0;
+    }
+
+    #tekst-omos {
+        margin-left: 10vw;
+    }
+}
