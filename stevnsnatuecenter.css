@@ -179,8 +179,6 @@
     margin-bottom: 5vw;
     margin-left: 2vw;
     max-width: 1200px;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
 
 }
 
@@ -190,8 +188,8 @@
 }
 
 .enkel-sn {
-    background-color: #92BA53;
-    color: #EAF2D4;
+    border-top: 1px solid #92BA53;
+    color: #92BA53;
     padding: 4vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -214,8 +212,8 @@
     text-decoration: none;
     padding: 10px 45px;
     margin-bottom: 1.5vw;
-    background-color: #EAF2D4;
-    color: #92BA53;
+    background-color: #92BA53;
+    color: #EAF2D4;
     border: none;
     cursor: pointer;
     transition: transform .1s;
