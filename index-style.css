@@ -345,10 +345,10 @@ span,
     padding: 1em 1em 1em;
     position: absolute;
     top: 60vw;
-    margin: 1vw;
     justify-content: center;
-    text-align: center;
     margin-top: 10vw;
+    max-width: 500px;
+    margin: 1vw
 }
 
 #omos-main {
@@ -1266,7 +1266,7 @@ footer {
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.38);
         color: white;
-        text-align: center;
+
     }
 
     .kontakt {
@@ -1293,5 +1293,9 @@ footer {
 
     #kontakt-main {
         margin-top: 0;
+    }
+
+    #tekst-omos {
+        margin-left: 10vw;
     }
 }
