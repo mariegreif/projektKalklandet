@@ -8,6 +8,7 @@ html {
     width: 100%;
     margin: auto;
     font-size: 100%;
+    background-color: #E1D9D6
 }
 
 img {
@@ -17,7 +18,7 @@ img {
 
 
 #logo-kalklandet img {
-    width: 150%;
+    width: 140%;
 }
 
 #logo-kalklandet {
@@ -38,18 +39,17 @@ h1,
 h2,
 h3,
 h4,
-p {
-    font-family: 'Limestone', Arial, sans-serif;
+p,
+span {
+    font-family: 'limestoneregular', Arial, sans-serif;
 }
 
 a,
 button,
 span,
     {
-    font-family: 'Limestone', Arial, sans-serif;
+    font-family: 'limestoneregular', Arial, sans-serif;
 }
-
-
 
 
 /*******************BURGERMENU********************/
@@ -75,14 +75,15 @@ span,
     position: fixed;
     top: 4.1vw;
     display: grid;
-    background-color: #B8B194;
+    background-color: #776B5F;
     height: 500px;
     padding-top: 5vw;
+    z-index: 2000;
 }
 
 #mobile-nav .drop-down {
 
-    background-color: #B8B194;
+    background-color: #776B5F;
     color: white;
 }
 
@@ -99,7 +100,7 @@ span,
     color: white;
     text-decoration: none;
     padding: 1vw;
-    font-family: 'Limestone';
+    font-family: 'limestoneregular';
 }
 
 
@@ -108,13 +109,13 @@ span,
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: #B8B194;
+    color: #776B5F;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #B8B194;
+    background-color: #776B5F;
     min-width: 160px;
 
     padding: 12px 16px;
@@ -150,11 +151,11 @@ span,
     position: relative;
     padding-right: 5vw;
     right: 4vw;
-    top: 1.3vw;
+    top: 0.7vw;
     text-transform: uppercase;
     list-style-type: none;
     font-size: 1.5vw;
-    font-family: 'Limestone';
+    font-family: 'limestoneregular';
 }
 
 #desktop .dropdown-content {
@@ -221,7 +222,10 @@ span,
 .besog1,
 .besog3 {
     text-align: center;
+    color: #776B5F;
 }
+
+.besog {}
 
 
 #attraktioner {
@@ -243,7 +247,7 @@ span,
 }
 
 #koldkrigsmuseum {
-    border: 0.5px solid lightgrey;
+    /*    border: 0.5px solid lightgrey;*/
     width: 150px;
     height: 155px;
     background-image: url(img/museum-logo/koldkrigs-muse.svg);
@@ -254,17 +258,17 @@ span,
 
 
 #stevnsklint {
-    border: 0.5px solid lightgrey;
+    /*    border: 0.5px solid lightgrey;*/
     width: 150px;
     height: 155px;
     background-image: url(img/museum-logo/stevns-klint.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
 }
 
 #geomuseum {
-    border: 0.5px solid lightgrey;
+    /*    border: 0.5px solid lightgrey;*/
     width: 150px;
     height: 155px;
     background-image: url(img/museum-logo/geomuse-faxe.svg);
@@ -274,13 +278,13 @@ span,
 }
 
 #stevnsnaturcenter {
-    border: 0.5px solid lightgrey;
+    /*    border: 0.5px solid lightgrey;*/
     width: 150px;
     height: 155px;
     background-image: url(img/museum-logo/stevns-natur.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
 }
 
 
@@ -298,7 +302,7 @@ span,
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3.5s;
     animation-name: fade;
-    animation-duration: 3.5s;
+    animation-duration: 4.5s;
 }
 
 @-webkit-keyframes fade {
@@ -311,15 +315,17 @@ span,
     }
 }
 
+/*
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
 
     to {
-        opacity: 1
+        opacity: .2
     }
 }
+*/
 
 /*************OM-OS-SIDEN*******************/
 .omos {
@@ -428,41 +434,48 @@ forside-data img {
 
 #ikoner-alle {
     display: grid;
-    padding: 1em;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     text-align: center;
     margin-bottom: 10vw;
+
 }
 
 #bornehave-ikon {
-    border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
-    background-image: url(img/ikoner/b%C3%B8rnehave.svg);
+    /*    border: 0.5px solid lightgrey;*/
+    width: 100px;
+    height: 105px;
+    background-image: url(img/ikoner/b%C3%B8rnehave-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+
 }
 
 
 #folkeskole-ikon {
-    border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
-    background-image: url(img/ikoner/folkeskole.svg);
+    /*    border: 0.5px solid lightgrey;*/
+    width: 100px;
+    height: 105px;
+    background-image: url(img/ikoner/folkeskole-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
 }
 
 #gymnasium-ikon {
-    border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
-    background-image: url(img/ikoner/gymnasium.svg);
+    /*    border: 0.5px solid lightgrey;*/
+    width: 100px;
+    height: 105px;
+    background-image: url(img/ikoner/gymnasium-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
+}
+
+.uv-intro,
+.hurtig-info {
+    color: #776B5F;
+    line-height: 1.5;
 }
 
 #sectioner-uv {
@@ -474,7 +487,7 @@ forside-data img {
 }
 
 article {
-    background-color: #D1CAB0;
+    /*    background-color: #A59B91;*/
     color: white;
 }
 
@@ -483,8 +496,8 @@ article {
 #section-gymnasium {
     text-align: left;
     padding: 1em;
-    border-top: solid orange;
-    color: orange;
+    border-top: solid #776B5F;
+    color: #776B5F;
 
 }
 
@@ -498,12 +511,12 @@ article {
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
+    align-self: end;
 }
 
 .laesmere:hover {
     transform: scale(1.1);
 }
-
 
 
 /************ SLIDESHOW SLUT *****************/
@@ -538,7 +551,7 @@ footer {
     display: block;
     width: 0;
     height: 2px;
-    background: #BFB595;
+    background: white;
     transition: width .3s;
 }
 
@@ -551,13 +564,13 @@ footer {
 .footer-list-top a {
     text-decoration: none;
     color: white;
-    font-family: 'Limestone';
+    font-family: 'limestoneregular';
 }
 
 .footer-list-header {
     padding: 10px 0 5px 0;
     color: #fff;
-    font-family: 'Limestone';
+    font-family: 'limestoneregular';
 }
 
 .footer-list-top p {
@@ -574,51 +587,12 @@ footer {
 
 .space {
     margin-top: 10vw;
+
 }
-
-
-/*
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #BFB595;
-    color: white;
-    text-align: center;
-    word-spacing: 7px;
-}
-
-.some {
-    position: fixed;
-    top: 94%;
-    left: 80%;
-    color: white;
-    font-size: 25px;
-}
-
-.some a:hover {
-    color: ;
-}
-
-.fa-facebook {
-    color: white;
-    padding-left: 10px;
-    text-decoration: none;
-}
-
-.fa-instagram {
-    color: white;
-    padding-left: 10px;
-    text-decoration: none;
-}
-*/
-
-.uv-intro {}
 
 .text-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 2vw;
     margin-top: 5vw;
     margin-left: 2vw;
@@ -633,6 +607,10 @@ footer {
 
 .bg-kkm {
     /*    background-color: #D7DCE2;*/
+}
+
+.column-left {
+    background-color: #387288;
 }
 
 #aabningstider-kkm {
@@ -698,7 +676,7 @@ footer {
 }
 
 .enkel {
-    background-color: #387288;
+    /*    background-color: #387288;*/
     color: #D7DCE2;
     padding: 2vw;
     display: grid;
@@ -1030,7 +1008,7 @@ footer {
 @media only screen and (min-width: 1160px) {
 
     #logo-kalklandet img {
-        width: 100%;
+        width: 110%;
     }
 
     #mobile-nav {
@@ -1050,7 +1028,7 @@ footer {
 
     #desktop .drop-down {
         color: white;
-        background-color: #B8B194;
+        background-color: #776B5F;
     }
 
     #menuknap-mobile {
@@ -1059,13 +1037,12 @@ footer {
 
 
     #attraktioner {
-        padding: 1em 1em 0;
         position: absolute;
-        top: 30vw;
+        top: 28vw;
         left: 15vw;
         grid-template-columns: auto auto auto auto auto;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
+        /*        background-color: rgba(0, 0, 0, 0.38);*/
     }
 
 
@@ -1083,6 +1060,7 @@ footer {
         left: 25vw;
         color: white;
         font-size: 5vw;
+
     }
 
     .besog2 {
@@ -1107,7 +1085,6 @@ footer {
 
 
     #stevnsnaturcenter {
-        border: 0.5px solid lightgrey;
         width: 180px;
         height: 185px;
         background-image: url(img/museum-logo/stevns-natur.svg);
@@ -1119,26 +1096,29 @@ footer {
     #geomuseum {
         width: 180px;
         height: 185px;
+        margin: 1em;
     }
 
     #stevnsklint {
         width: 180px;
         height: 185px;
+        margin: 1em;
     }
 
     #koldkrigsmuseum {
         width: 180px;
         height: 185px;
+        margin: 1em;
     }
 
     #ikoner-alle {
         padding: 1em 1em 0;
         position: absolute;
-        top: 27vw;
+        top: 28vw;
         left: 24vw;
         grid-template-columns: auto auto auto;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
+        /*        background-color: rgba(0, 0, 0, 0.38);*/
     }
 
     #bornehave-ikon {
@@ -1188,6 +1168,20 @@ footer {
         grid-template-columns: auto auto auto auto;
         justify-content: center;
 
+    }
+
+    .text-box {
+        grid-template-columns: auto auto;
+
+    }
+
+    .text-box .uv-intro {
+        grid-column-start: 1;
+
+    }
+
+    .text-box .hurtig-info {
+        grid-column-start: 2;
     }
 
     .text-box-kkm,
