@@ -50,13 +50,13 @@
 
 
 #sk-aktuelt-ikon {
-    border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
     background-image: url(img/ikoner/stevnsklint-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
 }
 
 .sk-overlay2 {
@@ -98,6 +98,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
 }
 
 .sk-overlay3 {
@@ -137,6 +138,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
 }
 
 .sk-overlay4 {
@@ -166,10 +168,6 @@
 #sk-findvej-ikon:hover .sk-overlay4 {
     height: 100%;
 }
-
-
-
-
 
 .text-box-sk {
     display: grid;

@@ -9,7 +9,7 @@
 
 }
 
-#sn-aabningstider {
+#sn-aabningstider-ikon {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
@@ -17,11 +17,41 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
+}
+
+
+.sn-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #92BA53;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.sn-aabning-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sn-aabningstider-ikon:hover .sn-overlay {
+    height: 100%;
 }
 
 
 
-#sn-aktuelt {
+#sn-aktuelt-ikon {
     border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
@@ -29,7 +59,38 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
 }
+
+.sn-overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #92BA53;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.sn-aktuelt-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sn-aktuelt-ikon:hover .sn-overlay2 {
+    height: 100%;
+}
+
+
 
 #sn-billetter {
     border: 0.5px solid lightgrey;
@@ -39,6 +100,35 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
+}
+
+.sn-overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #92BA53;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.sn-billetter-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sn-billetter:hover .sn-overlay3 {
+    height: 100%;
 }
 
 #sn-findvej {
@@ -49,6 +139,35 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    position: relative;
+}
+
+.sn-overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #92BA53;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.sn-findvej-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sn-findvej:hover .sn-overlay4 {
+    height: 100%;
 }
 
 

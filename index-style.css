@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#forside {}
-
-
-
 img {
     width: 100%;
 
@@ -230,8 +226,6 @@ span,
     color: #776B5F;
 }
 
-.besog {}
-
 
 #attraktioner {
     display: grid;
@@ -250,6 +244,7 @@ span,
     cursor: pointer;
     transform: scale(1.1);
 }
+
 
 #koldkrigsmuseum {
     /*    border: 0.5px solid lightgrey;*/
