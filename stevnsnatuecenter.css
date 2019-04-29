@@ -182,7 +182,7 @@
 
 }
 
-.text-box-sn h3 {
+.text-box-sn p {
     grid-column-start: 2;
     color: #92BA53;
 }
@@ -418,7 +418,7 @@
 
     }
 
-    .text-box-kkm h3 {
+    .text-box-kkm p {
         grid-column-start: 2;
         color: #387288;
     }
@@ -428,7 +428,7 @@
         max-width: 1200px;
     }
 
-    .text-box-geo h3 {
+    .text-box-geo p {
         grid-column-start: 2;
     }
 
