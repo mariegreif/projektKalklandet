@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-kkm">
+<body id="bg-kkm">
     <header>
         <div id="logo-kalklandet">
             <a href="index.html">
@@ -100,17 +100,50 @@
     <h1 class="besog">KOLDKRIGSMUSEUM STEVNSFORT</h1>
     <div id="bannerIkoner">
         <a href="">
-            <div id="aabningstider-kkm" class="muse"></div>
+            <div id="aabningstider-kkm" class="muse">
+                <div class="overlay">
+                    <div class="aabning-text">
+                        <p>Her skal det stå åbningstider</p>
+                    </div>
+                </div>
+            </div>
+
         </a>
-        <a href="">
-            <div id="aktuelt-kkm-ikon" class="muse"></div>
+        <a href="#kkm-aktuelt">
+            <div id="aktuelt-kkm-ikon" class="muse">
+                <div class="overlay2">
+                    <div class="aktuelt-text">
+                        <p>hej hej</p>
+                    </div>
+                </div>
+            </div>
         </a>
-        <a href="">
-            <div id="billetter-kkm" class="muse"></div>
-        </a>
-        <a href="">
-            <div id="findvej-kkm" class="muse"></div>
-        </a>
+
+
+
+
+        <div id="billetter-kkm" class="muse">
+            <div id="billetter-kkm-ikon" class="muse">
+                <div class="overlay3">
+                    <div class="billetter-text">
+                        <p>hejhej</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="findvej-kkm" class="muse">
+            <div id="findvej-kkm-ikon" class="muse">
+                <div class="overlay4">
+                    <div class="findvej-text">
+                        <p>hejhej</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <div class="text-box-kkm">
@@ -122,13 +155,13 @@
             I dag kan du på en guidet tur opleve det underjordiske fort, som det så ud dengang, da krigen var tættest på. Ethvert besøg på fortet er en ny og særlig oplevelse. I selskab med en af museets 20 engagerede og forskellige guider får du nærværende og levende fortællinger om den allestedsnærværende krig i en unik og autentisk ramme. </p>
     </div>
 
-    <h1 class="kkm-aktuelt">Aktuelt</h1>
+    <h1 id="kkm-aktuelt">Aktuelt</h1>
     <section class="aktuelt-section"></section>
 
     <template id="aktuelt-kkm">
         <article class="enkel">
             <div class="column-left">
-                <h2></h2>
+                <h2 id="aktuelt-overskrift"></h2>
                 <p class="text1"></p>
                 <p class="text2"></p>
                 <p class="text3"></p>
@@ -245,7 +278,6 @@
 
             })
         }
-
     </script>
 </body>
 
