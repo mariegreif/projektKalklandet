@@ -4,15 +4,16 @@ h1 {
 }
 
 .kontakt-headline {
-    color: #776B5F;
-    margin: 1em;
+    color: white;
+    font-size: 5vw;
 }
 
 
 .info-box-kontakt {
-    margin: 1vw;
     justify-content: center;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 

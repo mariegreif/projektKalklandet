@@ -233,11 +233,14 @@ span,
     grid-template-columns: auto auto;
     text-align: center;
     margin-bottom: 10vw;
-
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .muse {
     transition: transform .2s;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .muse:hover {
@@ -465,6 +468,7 @@ footer {
         text-align: center;
         color: white;
         font-size: 5vw;
+
     }
 
     .besog1 {

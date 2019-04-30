@@ -117,7 +117,8 @@
 
 .sn-billetter-text {
     color: white;
-    font-size: 3vw;
+    font-size: 2.7vw;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -179,6 +180,8 @@
     margin-bottom: 5vw;
     margin-left: 2vw;
     max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -389,6 +392,8 @@
         left: 20vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
 
     }
 
@@ -510,7 +515,7 @@
 
 
     .sn-billetter-text {
-        font-size: 1.1vw;
+        font-size: 0.9vw;
 
     }
 
