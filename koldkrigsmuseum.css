@@ -10,7 +10,6 @@
 }
 
 #aabningstider-kkm {
-    border: 0.5px solid lightgrey;
     width: 150px;
     height: 155px;
     background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
@@ -30,18 +29,22 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    padding: auto;
 }
 
 .aabning-text {
     color: white;
     font-size: 3vw;
+    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+*/
     text-align: left;
+    padding: 3vw;
 }
 
 #aabningstider-kkm:hover .kkm-overlay {
@@ -76,13 +79,16 @@
 .aktuelt-text {
     color: white;
     font-size: 3vw;
+    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: left;
+*/
+    text-align: center;
+    padding-top: 13vw;
 }
 
 #aktuelt-kkm-ikon:hover .kkm-overlay2 {
@@ -113,13 +119,18 @@
 .billetter-text {
     color: white;
     font-size: 3vw;
+    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+*/
     text-align: left;
+    padding: 5vw;
+
+
 }
 
 #billetter-kkm:hover .kkm-overlay3 {
@@ -155,13 +166,16 @@
 .findvej-text {
     color: white;
     font-size: 3vw;
+    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+*/
     text-align: left;
+    padding: 5vw;
 }
 
 #findvej-kkm:hover .kkm-overlay4 {
