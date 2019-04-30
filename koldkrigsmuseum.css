@@ -29,7 +29,6 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
-    padding: auto;
 }
 
 .aabning-text {
@@ -79,16 +78,14 @@
 .aktuelt-text {
     color: white;
     font-size: 3vw;
-    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-*/
+
     text-align: center;
-    padding-top: 13vw;
 }
 
 #aktuelt-kkm-ikon:hover .kkm-overlay2 {
@@ -118,17 +115,15 @@
 
 .billetter-text {
     color: white;
-    font-size: 3vw;
-    /*
+    font-size: 2.7vw;
+
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-*/
     text-align: left;
-    padding: 5vw;
 
 
 }
@@ -166,16 +161,13 @@
 .findvej-text {
     color: white;
     font-size: 3vw;
-    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-*/
     text-align: left;
-    padding: 5vw;
 }
 
 #findvej-kkm:hover .kkm-overlay4 {
@@ -525,6 +517,8 @@
 
     .aabning-text {
         font-size: 1vw;
+        margin-top: 0;
+
     }
 
     .aktuelt-text {
@@ -534,7 +528,7 @@
 
 
     .billetter-text {
-        font-size: 1.1vw;
+        font-size: 0.9vw;
 
     }
 
