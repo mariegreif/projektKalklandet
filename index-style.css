@@ -581,7 +581,7 @@ footer {
     }
 
     .footer-social-overlap i {
-        font-size: 3.2vw;
+        font-size: 3vw;
     }
 
     .footer-list-header {
@@ -706,13 +706,15 @@ footer {
     }
 }
 
-.search-box {
 
-}
 
 #search {
     padding: 0.5em;
     border-radius: 25px;
     text-decoration: none;
     font-family: 'limestoneregular';
+}
+
+.search-box {
+    justify-self: center;
 }

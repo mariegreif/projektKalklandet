@@ -384,20 +384,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    footer.flex-rw {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-decoration: none;
-        list-style-type: none;
-    }
 
-    .footer-social-overlap i {
-        font-size: 3.5vw;
-    }
-
-    .footer-list-header {
-        font-size: 2em;
-    }
 
     #bannerIkoner {
         padding: 1em 1em 0;
