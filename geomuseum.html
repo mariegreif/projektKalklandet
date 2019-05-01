@@ -144,13 +144,10 @@
     </div>
 
     <div class="text-box-geo">
-        <h3><i>"DET SJOVT OG MAN KAN LÆRE EN MASSE AF DET" NOAM, 2. KLASSE</i></h3>
-        <p><b>Rejs tilbage i tiden til dengang Danmark var dækket af et dybt hav, og der voksede et stort koralrev, hvor Faxe ligger i dag. Her levede hajer og krokodiller sammen med mere end 500 andre slags dyr.</b>
-            <br><br>
-            På Geomuseum Faxe kan du se den dramatiske historie om den sidste store masseuddøden, der hændte for 66 millioner år siden. Du får også fortællingen om hvordan livet rejste sig på ny og dannede det unikke koralrev.
-            <br><br>
-            Du kan også gå på fossiljagt i Faxe Kalkbrud og finde dine egne 63 millioner år gamle fossiler.</p>
+        <h3 class="intro-overskrift-geo"></h3>
+        <p class="intro-tekst-geo"></p>
     </div>
+
     <h1 id="geo-aktuelt">Aktuelt</h1>
     <section class="aktuelt-section-geo"></section>
 
@@ -237,43 +234,62 @@
             }
         }
 
-
+        let intro;
         let aktuelt = [];
         let filter = "alle";
-        document.addEventListener("DOMContentLoaded", hentJson);
+        document.addEventListener("DOMContentLoaded", start);
 
-        //hent JSON fil i asynkron funktion
-        async function hentJson() {
-            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/geomuseum_faxe";
+        function start() {
+            //hent JSON fil i asynkron funktion
+            async function hentJson() {
+                const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/geomuseum_faxe";
 
-            //henter data filen
-            const myJson = await fetch(url);
+                //henter data filen
+                const myJson = await fetch(url);
 
 
-            //den hentede json filen skal tolkes som json
-            undervisninger = await myJson.json();
+                //den hentede json filen skal tolkes som json
+                undervisninger = await myJson.json();
 
-            //Kald funktionen som viser data i DOM
-            visAktuelt();
+                //Kald funktionen som viser data i DOM
+                visAktuelt();
+            }
+
+            function visAktuelt() {
+                let dest = document.querySelector(".aktuelt-section-geo");
+                let temp = document.querySelector("#aktuelt-geo");
+
+                undervisninger.forEach(aktuelt => {
+
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
+                    klon.querySelector(".text1").innerHTML = aktuelt.text1;
+                    klon.querySelector(".text2").innerHTML = aktuelt.text2;
+                    klon.querySelector(".text3").innerHTML = aktuelt.text3;
+                    klon.querySelector("img").src = aktuelt.billede.guid;
+
+                    dest.appendChild(klon);
+
+                })
+            }
+            hentJson();
+
+            async function hentJson2() {
+                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/194"
+                let jsonData = await fetch(url);
+                intro = await jsonData.json();
+                visIntro();
+            };
+
+            function visIntro() {
+                document.querySelector(".intro-overskrift-geo").textContent = intro.title.rendered;
+                document.querySelector(".intro-tekst-geo").innerHTML = intro.content.rendered;
+            }
+            hentJson2();
+
+
         }
 
-        function visAktuelt() {
-            let dest = document.querySelector(".aktuelt-section-geo");
-            let temp = document.querySelector("#aktuelt-geo");
-
-            undervisninger.forEach(aktuelt => {
-
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
-                klon.querySelector(".text1").innerHTML = aktuelt.text1;
-                klon.querySelector(".text2").innerHTML = aktuelt.text2;
-                klon.querySelector(".text3").innerHTML = aktuelt.text3;
-                klon.querySelector("img").src = aktuelt.billede.guid;
-
-                dest.appendChild(klon);
-
-            })
-        }
     </script>
 </body>
 

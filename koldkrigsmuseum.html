@@ -154,12 +154,8 @@
     </div>
 
     <div class="text-box-kkm">
-        <h3><i>”DET ER MEGET VILDT AT TÆNKE PÅ, AT DER VAR NOGEN DER LEVEDE SÅDAN” SOFIE, 7 ÅR</i></h3>
-        <p><b>Den Kolde Krig påvirkede enhver, der levede i perioden. På Koldkrigsmuseum Stevnsfort minder vi dig om en historie, som du måske kan huske, men slet ikke kender.</b>
-            <br><br>
-            Under Den Kolde Krig var Stevnsfort en brik i Danmarks og NATO’s forsvar. Halvøen Stevns ville ligge i allerforreste frontlinje, hvis der udbrød krig mellem øst og vest. Derfor byggede man Stevnsfort, og i 40 år var man her døgnet rundt klar til krig.
-            <br><br>
-            I dag kan du på en guidet tur opleve det underjordiske fort, som det så ud dengang, da krigen var tættest på. Ethvert besøg på fortet er en ny og særlig oplevelse. I selskab med en af museets 20 engagerede og forskellige guider får du nærværende og levende fortællinger om den allestedsnærværende krig i en unik og autentisk ramme. </p>
+        <h3 class="intro-overskrift-kkm"></h3>
+        <p class="intro-tekst-kkm"></p>
     </div>
 
     <h1 id="kkm-aktuelt">AKTUELT PÅ KOLDKRIGSMUSEUM</h1>
@@ -248,43 +244,60 @@
             }
         }
 
-
+        let intro;
         let aktuelt = [];
         let filter = "alle";
-        document.addEventListener("DOMContentLoaded", hentJson);
+        document.addEventListener("DOMContentLoaded", start);
 
-        //hent JSON fil i asynkron funktion
-        async function hentJson() {
-            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/koldkrigsmuseum";
+        function start() {
+            //hent JSON fil i asynkron funktion
+            async function hentJson() {
+                const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/koldkrigsmuseum";
 
-            //henter data filen
-            const myJson = await fetch(url);
+                //henter data filen
+                const myJson = await fetch(url);
 
 
-            //den hentede json filen skal tolkes som json
-            aktuelt = await myJson.json();
+                //den hentede json filen skal tolkes som json
+                aktuelt = await myJson.json();
 
-            //Kald funktionen som viser data i DOM
-            visAktuelt();
+                //Kald funktionen som viser data i DOM
+                visAktuelt();
+            }
+
+            function visAktuelt() {
+                let dest = document.querySelector(".aktuelt-section");
+                let temp = document.querySelector("#aktuelt-kkm");
+                console.log(temp);
+                aktuelt.forEach(aktuel => {
+
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h2").innerHTML = aktuel.title.rendered;
+                    klon.querySelector(".text1").innerHTML = aktuel.text1;
+                    klon.querySelector(".text2").innerHTML = aktuel.text2;
+                    klon.querySelector(".text3").innerHTML = aktuel.text3;
+                    klon.querySelector("img").src = aktuel.billede.guid;
+
+                    dest.appendChild(klon);
+
+                })
+            }
+            hentJson();
+
+            async function hentJson2() {
+                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/188"
+                let jsonData = await fetch(url);
+                intro = await jsonData.json();
+                visIntro();
+            };
+
+            function visIntro() {
+                document.querySelector(".intro-overskrift-kkm").textContent = intro.title.rendered;
+                document.querySelector(".intro-tekst-kkm").innerHTML = intro.content.rendered;
+            }
+            hentJson2();
         }
 
-        function visAktuelt() {
-            let dest = document.querySelector(".aktuelt-section");
-            let temp = document.querySelector("#aktuelt-kkm");
-            console.log(temp);
-            aktuelt.forEach(aktuel => {
-
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = aktuel.title.rendered;
-                klon.querySelector(".text1").innerHTML = aktuel.text1;
-                klon.querySelector(".text2").innerHTML = aktuel.text2;
-                klon.querySelector(".text3").innerHTML = aktuel.text3;
-                klon.querySelector("img").src = aktuel.billede.guid;
-
-                dest.appendChild(klon);
-
-            })
-        }
     </script>
 </body>
 
