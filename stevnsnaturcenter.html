@@ -145,10 +145,7 @@
     </div>
 
     <div class="text-box-sn">
-        <p>
-            Bygningerne ved Stevns Naturcenter stammer fra Den Kolde Krig, hvor området var en del af Københavns luftforsvar. I dag kan du om for- og efteråret opleve imponerende fugletræk fra det gamle radartårn.
-            <br><br>
-            I den kalkholdige jord vokser sjældne planter, og på klinten har et vandrefalkepar gennem de seneste år ynglet med succes.
+        <p class="intro-tekst-sn">
         </p>
     </div>
 
@@ -233,42 +230,60 @@
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
         }
-
+        let intro;
         let aktuelt = [];
         let filter = "alle";
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        //hent JSON fil i asynkron funktion
-        async function hentJson() {
-            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/stevns_naturcenter";
-
-            //henter data filen
-            const myJson = await fetch(url);
+        document.addEventListener("DOMContentLoaded", start);
 
 
-            //den hentede json filen skal tolkes som json
-            undervisninger = await myJson.json();
+        function start() {
+            //hent JSON fil i asynkron funktion
+            async function hentJson() {
+                const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/stevns_naturcenter";
 
-            //Kald funktionen som viser data i DOM
-            visAktuelt();
-        }
+                //henter data filen
+                const myJson = await fetch(url);
 
-        function visAktuelt() {
-            let dest = document.querySelector(".aktuelt-section-sn");
-            let temp = document.querySelector("#aktuelt-sn");
 
-            undervisninger.forEach(aktuelt => {
+                //den hentede json filen skal tolkes som json
+                undervisninger = await myJson.json();
 
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
-                klon.querySelector(".text1").innerHTML = aktuelt.text1;
-                klon.querySelector(".text2").innerHTML = aktuelt.text2;
-                klon.querySelector(".text3").innerHTML = aktuelt.text3;
-                klon.querySelector("img").src = aktuelt.billede.guid;
+                //Kald funktionen som viser data i DOM
+                visAktuelt();
+            }
 
-                dest.appendChild(klon);
+            function visAktuelt() {
+                let dest = document.querySelector(".aktuelt-section-sn");
+                let temp = document.querySelector("#aktuelt-sn");
 
-            })
+                undervisninger.forEach(aktuelt => {
+
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h2").innerHTML = aktuelt.title.rendered;
+                    klon.querySelector(".text1").innerHTML = aktuelt.text1;
+                    klon.querySelector(".text2").innerHTML = aktuelt.text2;
+                    klon.querySelector(".text3").innerHTML = aktuelt.text3;
+                    klon.querySelector("img").src = aktuelt.billede.guid;
+
+                    dest.appendChild(klon);
+
+                })
+            }
+            hentJson();
+
+            async function hentJson2() {
+                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/205"
+                let jsonData = await fetch(url);
+                intro = await jsonData.json();
+                visIntro();
+            };
+
+            function visIntro() {
+                document.querySelector(".intro-tekst-sn").innerHTML = intro.content.rendered;
+            }
+            hentJson2();
+
+
         }
 
     </script>
