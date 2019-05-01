@@ -128,6 +128,12 @@
     text-align: left;
 }
 
+.sn-billetter-text a {
+    text-decoration: underline;
+    color: white;
+    font-family: 'limestoneregular';
+}
+
 #sn-billetter:hover .sn-overlay3 {
     height: 100%;
 }
@@ -221,11 +227,19 @@
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
-
+    justify-self: center;
 }
 
 .sn-btn:hover {
     transform: scale(1.1);
+}
+
+.column-right-sn {
+    display: grid;
+}
+
+.column-right-sn img {
+    justify-self: center;
 }
 
 
@@ -523,4 +537,8 @@
         font-size: 1.1vw;
 
     }
+}
+
+.column-left-sn {
+    display: grid;
 }

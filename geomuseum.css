@@ -193,7 +193,10 @@
 
 .enkel-geo img {
     max-width: 80%;
-    float: right;
+}
+
+.column-left {
+    display: grid;
 }
 
 .geo-btn {
@@ -206,13 +209,21 @@
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
-    text-align: center;
-
+    justify-self: center;
 }
 
 .geo-btn:hover {
     transform: scale(1.1);
 
+}
+
+.column-right-geo {
+    display: grid;
+
+}
+
+.column-right-geo img {
+    justify-self: center;
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
@@ -455,17 +466,6 @@
         float: right;
     }
 
-    .column-right-sk {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-    .column-right-sn {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
 
 
     .tekst-omos {

@@ -115,8 +115,7 @@
 
 .sk-billetter-text {
     color: white;
-    font-size: 2.7vw;
-
+    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,6 +123,13 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: left;
+}
+
+.sk-billetter-text a {
+    text-decoration: underline;
+    color: white;
+    font-family: 'limestoneregular';
+
 }
 
 #sk-billetter-ikon:hover .sk-overlay3 {
@@ -224,11 +230,17 @@
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
-
+    justify-self: center;
 }
 
 .sk-btn:hover {
     transform: scale(1.1);
+}
+
+
+.column-right-sk {
+    display: grid;
+    justify-self: center;
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
@@ -455,33 +467,13 @@
         grid-template-columns: 1fr 1fr;
     }
 
-
-    .column-right {
-        justify-self: end;
-        border-style: none;
-        padding-right: 5vw;
-    }
-
-    .column-right-geo {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
     .column-right-sk {
         justify-self: end;
         border-style: none;
         float: right;
     }
 
-    .column-right-sn {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-
-    .tekst-omos {
+    f .tekst-omos {
         padding: 2em 2em 2em;
         position: absolute;
         top: 12vw;
@@ -525,4 +517,8 @@
         font-size: 1.1vw;
 
     }
+}
+
+.column-left-sk {
+    display: grid;
 }
