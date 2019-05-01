@@ -198,7 +198,6 @@ span,
 }
 
 
-
 #forside-content {
     margin: 5vw;
     display: grid;
@@ -305,16 +304,28 @@ span,
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3.5s;
     animation-name: fade;
-    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
 
+
 @-webkit-keyframes fade {
-    from {
-        opacity: .2
+    0% {
+        opacity: 1;
     }
 
-    to {
-        opacity: 1
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
