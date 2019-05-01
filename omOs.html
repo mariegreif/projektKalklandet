@@ -93,10 +93,8 @@
 
     <main id="omos-main">
         <div class="tekst-omos">
-            <h1>HVEM ER VI</h1>
-            <p>Østsjællands Museum er et statsanerkendt museum, der arbejder med nyere tids kulturhistorie og geologi. Kalklandet er vores overordnede tema, som rummer den natur- og kulturhistorie, der findes i området, hvor kalken ligger tæt under overfladen. Inden for dette tema har koldkrigsfæstningen Stevnsfort, der ligger nedgravet i kalken, en fremtrædende plads.
-                <br><br>
-                Museet indsamler, registrerer, bevarer, forsker og formidler inden for den emnemæssige og geografiske afgrænsning jf. Museumslovens § 15.</p>
+            <h1></h1>
+            <p class="intro-omos"></p>
 
             <button class="omos">VORES OPGAVER</button>
 
@@ -150,7 +148,9 @@
         </ul>
     </footer>
     <script>
+        let intro;
         window.addEventListener("load", sidenVises);
+        document.addEventListener("DOMContentLoaded", hentJson);
 
         function sidenVises() {
             console.log("siden vises!")
@@ -170,6 +170,20 @@
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
         }
+
+        async function hentJson() {
+            let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/209"
+            let jsonData = await fetch(url);
+            intro = await jsonData.json();
+            visIntro();
+        };
+
+        function visIntro() {
+            document.querySelector("h1").textContent = intro.title.rendered;
+            document.querySelector(".intro-omos").innerHTML = intro.content.rendered;
+        }
+        hentJson();
+
     </script>
 </body>
 
