@@ -581,11 +581,11 @@ footer {
     }
 
     .footer-social-overlap i {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .footer-list-header {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #bannerIkoner {
@@ -704,4 +704,15 @@ footer {
     #tekst-omos {
         margin-left: 10vw;
     }
+}
+
+.search-box {
+
+}
+
+#search {
+    padding: 0.5em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'limestoneregular';
 }
