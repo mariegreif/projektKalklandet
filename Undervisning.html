@@ -136,21 +136,7 @@
         </a>
     </div>
     <div class="intro-text-uv">
-        <p>
-            Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.
-
-            Vi tilbyder undervisning mandag til fredag kl. 9-17.
-
-            Koldkrigsmuseum Stevnsfort<br>
-
-            Stevns Klint<br>
-
-            Geomuseum Faxe<br>
-
-            Undervisningsforløb 2 timer 1.000 kr.<br>
-            Pr. ekstra time 400 kr.<br>
-            Rollespil, 4 timer 4.000 kr.<br>
-            <button class="laesmere">BOOK HER</button>
+        <p class="undervisning-intro">
         </p>
     </div>
 
@@ -174,6 +160,7 @@
             <h2></h2>
             <img>
             <p class="kort"></p>
+            <p class="location"></p>
             <button class="laesmere">LÆS MERE</button>
         </article>
     </template>
@@ -259,55 +246,75 @@
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
         }
-
+        let intro;
         let undervisninger = [];
         let filter = "alle";
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        //hent JSON fil i asynkron funktion
-        async function hentJson() {
-            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/undervisninger";
-
-            //henter data filen
-            const myJson = await fetch(url);
+        document.addEventListener("DOMContentLoaded", start);
 
 
-            //den hentede json filen skal tolkes som json
-            undervisninger = await myJson.json();
+        function start() {
+            //hent JSON fil i asynkron funktion
+            async function hentJson() {
+                const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/undervisninger";
 
-            //Kald funktionen som viser data i DOM
-            visUndervisning();
-        }
+                //henter data filen
+                const myJson = await fetch(url);
 
-        function visUndervisning() {
-            let dest1 = document.querySelector(".gymnasium");
-            let dest2 = document.querySelector(".folkeskole");
-            let dest3 = document.querySelector(".bornehave");
-            let temp = document.querySelector("#uv");
 
-            undervisninger.forEach(undervisning => {
+                //den hentede json filen skal tolkes som json
+                undervisninger = await myJson.json();
 
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = undervisning.title.rendered;
-                klon.querySelector("img").src = undervisning.billede.guid;
+                //Kald funktionen som viser data i DOM
+                visUndervisning();
+            }
 
-                klon.querySelector(".kort").innerHTML = undervisning.beskrivelse;
+            function visUndervisning() {
+                let dest1 = document.querySelector(".gymnasium");
+                let dest2 = document.querySelector(".folkeskole");
+                let dest3 = document.querySelector(".bornehave");
+                let temp = document.querySelector("#uv");
 
-                // dest1.appendChild(klon);
-                if (undervisning.kategori == "Gymnasium") {
+                undervisninger.forEach(undervisning => {
 
-                    dest1.appendChild(klon);
-                }
-                if (undervisning.kategori == "Folkeskole") {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h2").innerHTML = undervisning.title.rendered;
+                    klon.querySelector("img").src = undervisning.billede.guid;
+                    klon.querySelector(".kort").innerHTML = undervisning.beskrivelse;
+                    klon.querySelector(".location").innerHTML = undervisning.plads;
 
-                    dest2.appendChild(klon);
-                }
-                if (undervisning.kategori == "Børnehave") {
+                    // dest1.appendChild(klon);
+                    if (undervisning.kategori == "Gymnasium") {
 
-                    dest3.appendChild(klon);
-                }
+                        dest1.appendChild(klon);
+                    }
+                    if (undervisning.kategori == "Folkeskole") {
 
-            })
+                        dest2.appendChild(klon);
+                    }
+                    if (undervisning.kategori == "Børnehave") {
+
+                        dest3.appendChild(klon);
+                    }
+
+                })
+            }
+
+            hentJson();
+
+            async function hentJson2() {
+                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/211"
+                let jsonData = await fetch(url);
+                intro = await jsonData.json();
+                visIntro();
+            };
+
+            function visIntro() {
+                document.querySelector(".undervisning-intro").innerHTML = intro.content.rendered;
+            }
+            hentJson2();
+
+
+
         }
     </script>
 

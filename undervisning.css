@@ -101,7 +101,7 @@ article {
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
-    align-self: end;
+
 }
 
 .laesmere:hover {
