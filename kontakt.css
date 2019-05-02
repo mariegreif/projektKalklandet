@@ -39,7 +39,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #776B5F;
+    background-color: orange;
     color: white;
     overflow: hidden;
     width: 100%;
@@ -79,7 +79,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #776B5F;
+    background-color: orange;
     color: white;
     overflow: hidden;
     width: 100%;
@@ -119,7 +119,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #776B5F;
+    background-color: orange;
     color: white;
     overflow: hidden;
     width: 100%;
@@ -443,7 +443,7 @@ h1 {
         left: 24vw;
         grid-template-columns: auto auto auto;
         justify-content: center;
-        /*        background-color: rgba(0, 0, 0, 0.38);*/
+        background-color: rgba(119, 107, 95, 0.72);
     }
 
     #adresse-ikon {

@@ -9,7 +9,7 @@ h1 {
     grid-template-columns: 1fr;
     padding: 1em 1em 1em;
     position: absolute;
-    top: 60vw;
+    top: 40vw;
     justify-content: center;
     margin-top: 10vw;
     max-width: 500px;
@@ -301,4 +301,13 @@ h1 {
     #tekst-omos {
         margin-left: 10vw;
     }
+}
+
+.buttons-omos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.background-img {
+ padding-top: 5vw;
 }
