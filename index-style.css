@@ -289,6 +289,29 @@ span,
     margin: 1em 1em 1em 0;
 }
 
+#search {
+    padding: 0.5em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'limestoneregular';
+}
+
+.search-box {
+    justify-self: center;
+}
+
+.slideshow-container {
+    opacity: 0.5;
+    padding-top: 5vw;
+}
+
+
+#index-velkommen {
+    color: #776B5F;
+    padding: 1vw;
+}
+
+
 
 
 
@@ -424,8 +447,17 @@ footer {
     float: left;
 }
 
+.start-tekst h4 {
+    text-align: center;
+}
 
+.start-tekst p {
+    margin-top: 0;
+}
 
+.start-headline {
+    margin-bottom: 0;
+}
 
 
 
@@ -461,11 +493,69 @@ footer {
         display: none;
     }
 
+    #index-main {
+        background-color: rgba(0, 0, 0, 0.29);
+    }
+
+    #index-velkommen {
+        /*
+        display: grid;
+        grid-template-columns: 370px 550px 350px;
+*/
+
+        position: absolute;
+        top: 5vw;
+        color: #776B5F;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+    .textbox-index {
+        grid-column-start: 2;
+        padding-left: 2vw;
+        margin-right: auto;
+        margin-left: auto;
+        /*        line-height: 1vw;*/
+    }
+
+    .start-headline {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+        font-size: 4em;
+        margin-left: 15vw;
+    }
+
+
+    .start-tekst p:nth-child(1) {
+        margin-top: 0;
+        margin-left: 17vw;
+        font-size: 1.3em;
+    }
+
+    .start-tekst h4 {
+        margin-top: 5vw;
+        text-align: center;
+        font-size: 1.5em;
+        margin-left: 20vw;
+    }
+
+    .start-headline {
+        grid-column-start: 2;
+    }
+
+    .start-tekst {
+        grid-column-start: 2;
+
+    }
 
     #attraktioner {
         position: absolute;
-        top: 28vw;
-        left: 15vw;
+        top: 21vw;
+        left: 13vw;
         grid-template-columns: auto auto auto auto auto;
         justify-content: center;
         /*        background-color: rgba(0, 0, 0, 0.38);*/
@@ -513,8 +603,8 @@ footer {
 
 
     #stevnsnaturcenter {
-        width: 180px;
-        height: 185px;
+        width: 200px;
+        height: 205px;
         background-image: url(img/museum-logo/stevns-natur.svg);
         background-size: 100%;
         background-repeat: no-repeat;
@@ -522,20 +612,20 @@ footer {
     }
 
     #geomuseum {
-        width: 180px;
-        height: 185px;
+        width: 200px;
+        height: 205px;
         margin: 1em;
     }
 
     #stevnsklint {
-        width: 180px;
-        height: 185px;
+        width: 200px;
+        height: 205px;
         margin: 1em;
     }
 
     #koldkrigsmuseum {
-        width: 180px;
-        height: 185px;
+        width: 200px;
+        height: 205px;
         margin: 1em;
     }
 
@@ -704,17 +794,4 @@ footer {
     #tekst-omos {
         margin-left: 10vw;
     }
-}
-
-
-
-#search {
-    padding: 0.5em;
-    border-radius: 25px;
-    text-decoration: none;
-    font-family: 'limestoneregular';
-}
-
-.search-box {
-    justify-self: center;
 }

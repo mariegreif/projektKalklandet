@@ -77,13 +77,6 @@
 
 
     <div class="slideshow-container">
-        <div id="forside-content" class="hidden">
-            <h1 class="overskrift">
-            </h1>
-            <p class="indhold">
-            </p>
-        </div>
-
 
         <div class="mySlides fade">
             <img src="img/splash-desktop1.png">
@@ -103,30 +96,36 @@
 
     </div>
 
+    <main id="index-main">
 
-    <h1 class="besog">VELKOMMEN TIL KALKLANDET!</h1>
-    <div id="attraktioner">
-        <a href="koldkrigsmuseum.html">
-            <div id="koldkrigsmuseum" class="muse">
+        <div id="index-velkommen">
+            <div class="textbox-index">
+                <h1 class="start-headline"></h1>
+                <p class="start-tekst">
+                </p>
             </div>
-        </a>
-        <a href="stevnsklint.html">
-            <div id="stevnsklint" class="muse">
-            </div>
-        </a>
-        <a href="geomuseum.html">
-            <div id="geomuseum" class="muse">
-            </div>
-        </a>
-        <a href="stevnsnaturcenter.html">
-            <div id="stevnsnaturcenter" class="muse">
-            </div>
-        </a>
-    </div>
-    <div class="space">
 
-    </div>
+            <div id="attraktioner">
 
+                <a href="koldkrigsmuseum.html">
+                    <div id="koldkrigsmuseum" class="muse">
+                    </div>
+                </a>
+                <a href="stevnsklint.html">
+                    <div id="stevnsklint" class="muse">
+                    </div>
+                </a>
+                <a href="geomuseum.html">
+                    <div id="geomuseum" class="muse">
+                    </div>
+                </a>
+                <a href="stevnsnaturcenter.html">
+                    <div id="stevnsnaturcenter" class="muse">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 
     <footer class="flex-rw">
 
@@ -170,6 +169,8 @@
     </footer>
 
     <script>
+        let intro;
+        document.addEventListener("DOMContentLoaded", hentJson);
         window.addEventListener("load", sidenVises);
 
         function sidenVises() {
@@ -208,29 +209,20 @@
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
         }
-        let indhold;
-        document.addEventListener("DOMContentLoaded", hentJson);
 
-        //hent JSON fil i asynkron funktion
+
         async function hentJson() {
-            const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/110";
+            let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/110"
+            let jsonData = await fetch(url);
+            intro = await jsonData.json();
+            visIntro();
+        };
 
-            //henter data filen
-            const myJson = await fetch(url);
-
-
-            //den hentede json filen skal tolkes som json
-            indhold = await myJson.json();
-
-            //Kald funktionen som viser data i DOM
-            visIndhold();
+        function visIntro() {
+            document.querySelector(".start-headline").textContent = intro.title.rendered;
+            document.querySelector(".start-tekst").innerHTML = intro.content.rendered;
         }
-
-        function visIndhold() {
-            document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
-            document.querySelector(".indhold").innerHTML = indhold.content.rendered;
-
-        }
+        hentJson();
     </script>
 
 </body>
