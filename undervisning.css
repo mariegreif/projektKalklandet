@@ -8,9 +8,10 @@
 
 }
 
-forside-data img {
+.forside-data img {
     width: 90%;
 }
+
 
 
 #ikoner-alle {
@@ -64,15 +65,10 @@ forside-data img {
 
 }
 
-.intro-text-uv button {
-    margin: 2vw 0;
-}
-
 #sectioner-uv {
     display: grid;
     padding: 1em;
     grid-template-columns: auto;
-
     margin-bottom: 10vw;
 }
 
@@ -91,16 +87,18 @@ article {
 
 }
 
-.laesmere {
+#sectioner-uv .laesmere {
     text-decoration: none;
     padding: 10px 45px;
-    margin-bottom: 1.5vw;
     background-color: orange;
     color: white;
     border: none;
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
+    align-self: end;
+    place-self: end;
+    justify-self: end;
 
 }
 
@@ -139,17 +137,6 @@ article {
         display: none;
     }
 
-
-    #attraktioner {
-        position: absolute;
-        top: 28vw;
-        left: 15vw;
-        grid-template-columns: auto auto auto auto auto;
-        justify-content: center;
-        /*        background-color: rgba(0, 0, 0, 0.38);*/
-    }
-
-
     .besog {
         position: absolute;
         top: 20vw;
@@ -164,26 +151,18 @@ article {
         left: 25vw;
         color: white;
         font-size: 5vw;
+        text-shadow: 1px 1px 2px black;
 
     }
 
-    .besog2 {
-        position: absolute;
-        top: 20vw;
-        left: 30vw;
-        color: white;
-        font-size: 5vw;
+    button {
+        align-self: end;
+        justify-self: end;
+
+
     }
 
-    .besog3 {
-        position: absolute;
-        top: 15vw;
-        left: 25vw;
-        color: white;
-        font-size: 5vw;
-    }
-
-
+    /*
     #forside-content {
         display: block;
     }
@@ -215,7 +194,9 @@ article {
         height: 185px;
         margin: 1em;
     }
+*/
 
+    /*
     #ikoner-alle {
         padding: 1em 1em 0;
         position: absolute;
@@ -225,22 +206,26 @@ article {
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
-        /*        background-color: rgba(0, 0, 0, 0.38);*/
+                background-color: rgba(0, 0, 0, 0.38);
     }
+*/
 
     #bornehave-ikon {
         width: 180px;
         height: 185px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
     }
 
     #folkeskole-ikon {
         width: 180px;
         height: 185px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
     }
 
     #gymnasium-ikon {
         width: 180px;
         height: 185px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
     }
 
     main {
@@ -249,7 +234,14 @@ article {
 
 
     .ny_container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 0;
+    }
+
+    #section-bornehave,
+    #section-folkeskole,
+    #section-gymnasium {
+        padding-top: 6vw;
     }
 
     #bannerIkoner {
@@ -263,8 +255,9 @@ article {
     }
 
     .intro-text-uv {
-        grid-template-columns: auto 600px auto;
+        grid-template-columns: auto 500px auto;
         grid-column-start: 2;
+        margin-top: 0;
 
     }
 
@@ -314,41 +307,5 @@ article {
     }
 
 
-
-    .enkel {
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .enkel-geo,
-    .enkel-sk,
-    .enkel-sn {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .column-right {
-        justify-self: end;
-        border-style: none;
-        padding-right: 5vw;
-    }
-
-    .column-right-geo {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-    .column-right-sk {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-    .column-right-sn {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
 
 }
