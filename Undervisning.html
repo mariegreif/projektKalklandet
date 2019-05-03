@@ -85,8 +85,6 @@
         <div id="forside-content" class="hidden">
             <h1 class="overskrift">
             </h1>
-            <p class="indhold">
-            </p>
         </div>
 
 
@@ -111,12 +109,20 @@
             </div>
         </a>
     </div>
+    <section class="sectionIntro"></section>
+    <template id="uvIntro">
+        <div class="intro-text-uv">
+            <left>
+                <h4></h4>
+                <p class="undervisning-intro">
+                </p>
+            </left>
+            <right>
+                <img>
+            </right>
+        </div>
+    </template>
 
-    <div class="intro-text-uv">
-        <p class="undervisning-intro">
-        </p>
-        <img>
-    </div>
     <main id="sectioner-uv">
         <h1 id="section-bornehave">BØRNEHAVE</h1>
         <div class="sections-info">
@@ -261,8 +267,7 @@
             }
         }
 
-        }]
-        let intro;
+        let intro = [];
         let undervisninger = [];
         let filter = "alle";
         document.addEventListener("DOMContentLoaded", start);
@@ -325,11 +330,21 @@
             };
 
             function visIntro() {
-                document.querySelector(".undervisning-intro").innerHTML = intro.beskrivelse;
-                document.querySelector("img").innerHTML = intro.billede.guid;
+
+                let dest4 = document.querySelector(".sectionIntro");
+                let temp2 = document.querySelector("#uvIntro");
+
+                intro.forEach(introbox => {
+
+                    let klon = temp2.cloneNode(true).content;
+                    klon.querySelector("h4").innerHTML = introbox.title.rendered;
+                    klon.querySelector(".undervisning-intro").innerHTML = introbox.content.rendered;
+                    klon.querySelector("img").src = introbox.billede.guid;
+                    dest4.appendChild(klon)
+                })
             }
 
-
+            hentJson2();
         }
 
     </script>

@@ -70,6 +70,7 @@ h2 {
     color: #776B5F;
     margin-right: auto;
     margin-left: auto;
+    padding: 1em;
 
 }
 
@@ -215,9 +216,16 @@ article {
 
     .intro-text-uv {
         grid-template-columns: auto auto;
-        margin-top: 0;
+        margin-top: 2.5vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
 
     }
+
+    .intro-text-uv h4, p {
+        grid-column-start: 1;
+    }
+
 
 
     .forside-data {
@@ -248,4 +256,8 @@ article {
         font-size: 4vw;
     }
 
+}
+
+.undervisning-intro {
+    padding-top: 2vw;
 }
