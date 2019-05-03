@@ -52,6 +52,14 @@
     margin: 1em 1em 1em 0;
 }
 
+h2 {
+    color: orange;
+}
+
+.location {
+    font-weight: 900;
+}
+
 .intro-text-uv {
     display: grid;
     grid-template-columns: auto;
@@ -77,10 +85,12 @@ article {
     color: #776B5F;
 }
 
+
+
 #section-bornehave,
 #section-folkeskole,
 #section-gymnasium {
-    text-align: left;
+    text-align: center;
     padding: 1em;
     border-top: solid #776B5F;
     color: #776B5F;
@@ -96,15 +106,24 @@ article {
     cursor: pointer;
     transition: transform .1s;
     font-size: 15px;
-    align-self: end;
-    place-self: end;
-    justify-self: end;
+    align-self: flex-end;
 
 }
 
 .laesmere:hover {
     transform: scale(1.1);
 }
+
+
+.sections-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1vw;
+    padding-left: 2.5vw;
+    color: #776B5F;
+}
+
+
 
 /************ MEDIA QUERIES DESKTOP ******************/
 @media only screen and (min-width: 1160px) {
@@ -137,13 +156,6 @@ article {
         display: none;
     }
 
-    .besog {
-        position: absolute;
-        top: 20vw;
-        left: 15vw;
-        color: white;
-        font-size: 5vw;
-    }
 
     .besog1 {
         position: absolute;
@@ -162,53 +174,6 @@ article {
 
     }
 
-    /*
-    #forside-content {
-        display: block;
-    }
-
-
-    #stevnsnaturcenter {
-        width: 180px;
-        height: 185px;
-        background-image: url(img/museum-logo/stevns-natur.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin: 1em;
-    }
-
-    #geomuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #stevnsklint {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #koldkrigsmuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-*/
-
-    /*
-    #ikoner-alle {
-        padding: 1em 1em 0;
-        position: absolute;
-        top: 28vw;
-        left: 24vw;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-                background-color: rgba(0, 0, 0, 0.38);
-    }
-*/
 
     #bornehave-ikon {
         width: 180px;
@@ -236,76 +201,51 @@ article {
     .ny_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 0;
+        grid-gap: 2vw;
     }
 
     #section-bornehave,
     #section-folkeskole,
     #section-gymnasium {
         padding-top: 6vw;
+        padding-bottom: 0;
     }
 
-    #bannerIkoner {
-        padding: 1em 1em 0;
-        position: absolute;
-        top: 30vw;
-        left: 20vw;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
 
-    }
 
     .intro-text-uv {
-        grid-template-columns: auto 500px auto;
-        grid-column-start: 2;
+        grid-template-columns: auto auto;
         margin-top: 0;
 
     }
 
-    /*
-    .text-box .uv-intro {
-        grid-column-start: 1;
+
+    .forside-data {
+        border-right-style: solid;
+        border-right-color: #776B5F;
+    }
+
+    .sections-info {
+        grid-template-columns: 500px 500px;
+        place-self: center;
+    }
+
+    .right {
+        padding-left: 5vw;
 
     }
 
-    .text-box .hurtig-info {
-        grid-column-start: 2;
-    }
-*/
+    .left {
 
-
-
-    .text-box-kkm,
-    .text-box-sk,
-    .text-box-sn {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
-    }
-
-    .text-box-kkm p {
-        grid-column-start: 2;
-
-    }
-
-    .text-box-kkm h3 {
-        grid-column-start: 2;
-        color: #387288;
-    }
-
-    .text-box-geo {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
+        padding-right: 4vw;
     }
 
 
-    .text-box-geo h3,
-    p {
-        grid-column-start: 2;
+
+    #section-bornehave,
+    #section-folkeskole,
+    #section-gymnasium {
+        font-size: 4vw;
     }
-
-    .text-box-geo p {
-        grid-column-start: 2;
-    }
-
-
 
 }

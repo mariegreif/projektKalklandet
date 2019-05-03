@@ -111,21 +111,77 @@
             </div>
         </a>
     </div>
+
     <div class="intro-text-uv">
         <p class="undervisning-intro">
         </p>
+        <img>
     </div>
-
     <main id="sectioner-uv">
         <h1 id="section-bornehave">BØRNEHAVE</h1>
+        <div class="sections-info">
+            <div class="left">
+                <p>Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.<br><br><br>
+                    <b>Læs mere om vores aktuelle udflugter:</b>
+                </p>
+            </div>
+
+            <div class="right">
+                <p>
+                    Undervisningsforløb 2 timer 1.000 kr.<br>
+                    Pr. ekstra time 400 kr.<br>
+                    Rollespil, 4 timer 4.000 kr.<br><br>
+                    Bestil eller hør nærmere på telefon 56 50 28 06<br>
+                    Telefonen er åben mandag-fredag: kl. 9-15.
+                </p>
+
+            </div>
+        </div>
         <section class="ny_container bornehave">
 
         </section>
         <h1 id="section-folkeskole">FOLKESKOLE</h1>
+        <div class="sections-info">
+            <div class="left">
+                <p>Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.<br><br><br>
+                    <b>Læs mere om vores aktuelle udflugter:</b>
+                </p>
+            </div>
+
+            <div class="right">
+                <p>
+                    Undervisningsforløb 2 timer 1.000 kr.<br>
+                    Pr. ekstra time 400 kr.<br>
+                    Rollespil, 4 timer 4.000 kr.<br><br>
+                    Bestil eller hør nærmere på telefon 56 50 28 06<br>
+                    Telefonen er åben mandag-fredag: kl. 9-15.
+                </p>
+
+            </div>
+        </div>
         <section class="ny_container folkeskole">
 
         </section>
+
         <h1 id="section-gymnasium">GYMNASIUM</h1>
+        <div class="sections-info">
+            <div class="left">
+                <p>Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.<br><br><br>
+                    <b>Læs mere om vores aktuelle udflugter:</b>
+                </p>
+            </div>
+
+            <div class="right">
+                <p>
+                    Undervisningsforløb 2 timer 1.000 kr.<br>
+                    Pr. ekstra time 400 kr.<br>
+                    Rollespil, 4 timer 4.000 kr.<br><br>
+                    Bestil eller hør nærmere på telefon 56 50 28 06<br>
+                    Telefonen er åben mandag-fredag: kl. 9-15.
+                </p>
+
+            </div>
+        </div>
         <section class="ny_container gymnasium">
 
         </section>
@@ -137,7 +193,6 @@
             <p class="location"></p>
             <img>
             <p class="kort"></p>
-
             <button class="laesmere">LÆS MERE</button>
         </article>
     </template>
@@ -205,6 +260,8 @@
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
         }
+
+        }]
         let intro;
         let undervisninger = [];
         let filter = "alle";
@@ -261,17 +318,16 @@
             hentJson();
 
             async function hentJson2() {
-                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/pages/211"
+                let url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/undervisning-intro"
                 let jsonData = await fetch(url);
                 intro = await jsonData.json();
                 visIntro();
             };
 
             function visIntro() {
-                document.querySelector(".undervisning-intro").innerHTML = intro.content.rendered;
+                document.querySelector(".undervisning-intro").innerHTML = intro.beskrivelse;
+                document.querySelector("img").innerHTML = intro.billede.guid;
             }
-            hentJson2();
-
 
 
         }
