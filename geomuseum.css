@@ -487,18 +487,19 @@
 
     .geo-aabning-text {
         color: white;
-        font-size: 1vw;
+        font-size: 1.3vw;
+
     }
 
     .geo-aktuelt-text {
         color: white;
-        font-size: 1.1vw;
+        font-size: 1.4vw;
 
     }
 
 
     .geo-billetter-text {
-        font-size: 0.9vw;
+        font-size: 1.1vw;
 
     }
 

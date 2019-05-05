@@ -36,7 +36,6 @@
 
 .aabning-text {
     color: white;
-    font-size: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -347,49 +346,6 @@
         margin: 1em;
     }
 
-    #geomuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #stevnsklint {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #koldkrigsmuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #ikoner-alle {
-        padding: 1em 1em 0;
-        position: absolute;
-        top: 28vw;
-        left: 24vw;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        /*        background-color: rgba(0, 0, 0, 0.38);*/
-    }
-
-    #bornehave-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #folkeskole-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #gymnasium-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -403,8 +359,8 @@
     #bannerIkoner {
         padding: 1em 1em 0;
         position: absolute;
-        top: 30vw;
-        left: 20vw;
+        top: 27vw;
+        left: 15vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
 
@@ -511,19 +467,18 @@
     }
 
     .aabning-text {
-        font-size: 1vw;
         margin-top: 0;
 
     }
 
     .aktuelt-text {
-        font-size: 1.1vw;
+        font-size: 1.4vw;
 
     }
 
 
     .billetter-text {
-        font-size: 0.9vw;
+        font-size: 1.1vw;
 
     }
 
