@@ -23,16 +23,18 @@ h1 {
     grid-template-columns: auto auto auto;
     text-align: center;
     margin-bottom: 10vw;
+
 }
 
 #adresse-ikon {
     width: 100px;
     height: 105px;
+    border-radius: 15px;
     background-image: url(img/ikoner/adresse-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em;
     position: relative;
+
 }
 
 .adresse-overlay {
@@ -68,10 +70,10 @@ h1 {
 #aebningstider-ikon {
     width: 100px;
     height: 105px;
+    border-radius: 15px;
     background-image: url(img/ikoner/%C3%A5bningstider-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em 1em 1em 0;
     position: relative;
 }
 
@@ -110,8 +112,8 @@ h1 {
     background-image: url(img/ikoner/telefonnummer-dark.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin: 1em 1em 1em 0;
     position: relative;
+    border-radius: 15px;
 }
 
 
@@ -209,82 +211,6 @@ h1 {
         display: none;
     }
 
-
-    #attraktioner {
-        position: absolute;
-        top: 28vw;
-        left: 15vw;
-        grid-template-columns: auto auto auto auto auto;
-        justify-content: center;
-        /*        background-color: rgba(0, 0, 0, 0.38);*/
-    }
-
-
-    .besog {
-        position: absolute;
-        top: 20vw;
-        left: 15vw;
-        color: white;
-        font-size: 5vw;
-    }
-
-    .besog1 {
-        position: absolute;
-        top: 10vw;
-        left: 25vw;
-        color: white;
-        font-size: 5vw;
-
-    }
-
-    .besog2 {
-        position: absolute;
-        top: 20vw;
-        left: 30vw;
-        color: white;
-        font-size: 5vw;
-    }
-
-    .besog3 {
-        position: absolute;
-        top: 15vw;
-        left: 25vw;
-        color: white;
-        font-size: 5vw;
-    }
-
-    #forside-content {
-        display: block;
-    }
-
-
-    #stevnsnaturcenter {
-        width: 180px;
-        height: 185px;
-        background-image: url(img/museum-logo/stevns-natur.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin: 1em;
-    }
-
-    #geomuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #stevnsklint {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
-    #koldkrigsmuseum {
-        width: 180px;
-        height: 185px;
-        margin: 1em;
-    }
-
     #ikoner-alle {
         padding: 1em 1em 0;
         position: absolute;
@@ -294,173 +220,55 @@ h1 {
         justify-content: center;
         /*        background-color: rgba(0, 0, 0, 0.38);*/
     }
+}
 
-    #bornehave-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #folkeskole-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #gymnasium-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
-    .ny_container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.text-box {
+    grid-template-columns: auto auto;
+
+}
 
 
-    #bannerIkoner {
-        padding: 1em 1em 0;
-        position: absolute;
-        top: 30vw;
-        left: 20vw;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
 
-    }
+#kontakt-main {
+    margin-top: 0;
+}
 
-    .text-box {
-        grid-template-columns: auto auto;
+#tekst-omos {
+    margin-left: 10vw;
+}
 
-    }
+#info-box-kontakt {
+    padding: 1em 1em 0;
+    position: absolute;
+    top: 7vw;
+    left: 24vw;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    background-color: rgba(119, 107, 95, 0.72);
+}
 
-    .text-box .uv-intro {
-        grid-column-start: 1;
+#adresse-ikon {
+    width: 180px;
+    height: 185px;
+    margin: 1em;
+}
 
-    }
+#aebningstider-ikon {
+    width: 180px;
+    height: 185px;
+    margin: 1em;
+}
 
-    .text-box .hurtig-info {
-        grid-column-start: 2;
-    }
-
-    .text-box-kkm,
-    .text-box-sk,
-    .text-box-sn {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
-    }
-
-    .text-box-kkm p {
-        grid-column-start: 2;
-
-    }
-
-    .text-box-kkm h3 {
-        grid-column-start: 2;
-        color: #387288;
-    }
-
-    .text-box-geo {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
-    }
-
-    .text-box-geo h3 {
-        grid-column-start: 2;
-    }
-
-    .text-box-geo p {
-        grid-column-start: 2;
-    }
-
-
-    .enkel {
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .enkel-geo,
-    .enkel-sk,
-    .enkel-sn {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .column-right {
-        justify-self: end;
-        border-style: none;
-        padding-right: 5vw;
-    }
-
-    .column-right-geo {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-    .column-right-sk {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-    .column-right-sn {
-        justify-self: end;
-        border-style: none;
-        float: right;
-    }
-
-
-    .tekst-omos {
-        padding: 2em 2em 2em;
-        position: absolute;
-        top: 12vw;
-        margin: 5vw;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
-        color: white;
-
-    }
-
-
-    #omos-main {
-
-        margin-top: 0;
-    }
-
-    #kontakt-main {
-        margin-top: 0;
-    }
-
-    #tekst-omos {
-        margin-left: 10vw;
-    }
-
-    #info-box-kontakt {
-        padding: 1em 1em 0;
-        position: absolute;
-        top: 7vw;
-        left: 24vw;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        background-color: rgba(119, 107, 95, 0.72);
-    }
-
-    #adresse-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #aebningstider-ikon {
-        width: 180px;
-        height: 185px;
-    }
-
-    #telfonnummer-ikon {
-        width: 180px;
-        height: 185px;
-    }
+#telfonnummer-ikon {
+    width: 180px;
+    height: 185px;
+    margin: 1em;
+}
 
 
 }

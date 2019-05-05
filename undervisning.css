@@ -30,6 +30,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
+    border-radius: 15px;
 
 }
 
@@ -41,6 +42,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em 1em 1em 0;
+    border-radius: 15px;
 }
 
 #gymnasium-ikon {
@@ -50,6 +52,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em 1em 1em 0;
+    border-radius: 15px;
 }
 
 h2 {
@@ -222,7 +225,8 @@ article {
 
     }
 
-    .intro-text-uv h4, p {
+    .intro-text-uv h4,
+    p {
         grid-column-start: 1;
     }
 

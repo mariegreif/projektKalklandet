@@ -12,8 +12,9 @@
 }
 
 #aabningstider-kkm {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -51,8 +52,9 @@
 
 #aktuelt-kkm-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/koldkrig-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -94,8 +96,9 @@
 
 
 #aktuelt-kkm-ikon {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/koldkrig-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -103,8 +106,9 @@
 }
 
 #billetter-kkm-ikon {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/koldkrig-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -148,8 +152,9 @@
 
 
 #findvej-kkm-ikon {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/koldkrig-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;

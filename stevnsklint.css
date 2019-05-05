@@ -10,8 +10,9 @@
 
 #sk-aabningstider-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -50,8 +51,9 @@
 
 
 #sk-aktuelt-ikon {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -92,8 +94,9 @@
 
 #sk-billetter-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -139,8 +142,9 @@
 
 #sk-findvej-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -388,8 +392,8 @@
     #bannerIkoner {
         padding: 1em 1em 0;
         position: absolute;
-        top: 30vw;
-        left: 20vw;
+        top: 27vw;
+        left: 15vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
         margin-right: auto;

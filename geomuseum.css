@@ -11,8 +11,9 @@
 }
 
 #aabningstider-geo {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/geo-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -50,8 +51,9 @@
 }
 
 #aktuelt-geo-ikon {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/geo-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -88,8 +90,9 @@
 }
 
 #billetter-geo {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/geo-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -127,8 +130,9 @@
 }
 
 #findvej-geo {
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
+    border-radius: 15px;
     background-image: url(img/ikoner/geo-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -368,11 +372,12 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+
     #bannerIkoner {
         padding: 1em 1em 0;
         position: absolute;
-        top: 30vw;
-        left: 20vw;
+        top: 27vw;
+        left: 15vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
         margin-right: auto;

@@ -11,13 +11,14 @@
 
 #sn-aabningstider-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
     background-image: url(img/ikoner/stevnsnatur-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
 }
 
 
@@ -31,6 +32,8 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
+
 }
 
 .sn-aabning-text {
@@ -53,13 +56,14 @@
 
 #sn-aktuelt-ikon {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
     background-image: url(img/ikoner/stevnsnatur-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
 }
 
 .sn-overlay2 {
@@ -72,6 +76,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sn-aktuelt-text {
@@ -94,13 +99,14 @@
 
 #sn-billetter {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
     background-image: url(img/ikoner/stevnsnatur-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
 }
 
 .sn-overlay3 {
@@ -113,6 +119,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sn-billetter-text {
@@ -140,13 +147,14 @@
 
 #sn-findvej {
     border: 0.5px solid lightgrey;
-    width: 150px;
-    height: 155px;
+    width: 180px;
+    height: 185px;
     background-image: url(img/ikoner/stevnsnatur-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
 }
 
 .sn-overlay4 {
@@ -159,6 +167,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sn-findvej-text {
@@ -390,8 +399,8 @@
     #bannerIkoner {
         padding: 1em 1em 0;
         position: absolute;
-        top: 30vw;
-        left: 20vw;
+        top: 27vw;
+        left: 15vw;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
         margin-right: auto;
