@@ -149,17 +149,23 @@
     </div>
 
     <h1 id="kkm-aktuelt">AKTUELT PÅ KOLDKRIGSMUSEUM</h1>
+
+    <!--Tomme sectioner - indhentes dynamiskt med json -->
     <section class="aktuelt-section"></section>
 
+    <!-- Indholdet i template-tagget skal klones med WP  -->
     <template id="aktuelt-kkm">
         <article class="enkel">
+            <!--Hver enkelt artikel skal have samme struktur og layout  -->
             <div class="column-left">
                 <h2 id="aktuelt-overskrift"></h2>
+                <!-- Paragraf-teksten deles op i sektioner -->
                 <p class="text1"></p>
                 <p class="text2"></p>
                 <p class="text3"></p>
                 <button class="kkm-btn">LÆS MERE</button>
             </div>
+            <!-- billedet placeres i en egne column fordi den skal placeres til højre fra teksten -->
             <div class="column-right">
                 <img>
             </div>
@@ -234,12 +240,16 @@
         }
 
         let intro;
+
+        //Tomt array - her skal artiklerne til de aktuelle udstillinger hentes med hjælp af json fra wordpress
         let aktuelt = [];
         let filter = "alle";
+
+        //Når dommet er loadet, kaldt funktionen start
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
-            //hent JSON fil i asynkron funktion
+
             async function hentJson() {
                 const url = "http://greif.nu/kea/2-semester/tema7/projektKalklandetWP/wordpress/wp-json/wp/v2/koldkrigsmuseum";
 
@@ -252,25 +262,28 @@
 
                 //Kald funktionen som viser data i DOM
                 visAktuelt();
-            }
+            } //hent JSON fil i asynkron funktion
 
             function visAktuelt() {
                 let dest = document.querySelector(".aktuelt-section");
                 let temp = document.querySelector("#aktuelt-kkm");
                 console.log(temp);
-                aktuelt.forEach(aktuel => {
 
+                // Det tomme array bliver fyldt med indhold
+                aktuelt.forEach(aktuel => {
+                    //Kloning af template-taggets indhold
                     let klon = temp.cloneNode(true).content;
                     klon.querySelector("h2").innerHTML = aktuel.title.rendered;
                     klon.querySelector(".text1").innerHTML = aktuel.text1;
                     klon.querySelector(".text2").innerHTML = aktuel.text2;
                     klon.querySelector(".text3").innerHTML = aktuel.text3;
                     klon.querySelector("img").src = aktuel.billede.guid;
-
+                    //Tilføjer klonen til variablen dest (sectionen)
                     dest.appendChild(klon);
 
                 })
             }
+            //Henter og viser den dynamiske datan fra WP
             hentJson();
 
             async function hentJson2() {
@@ -286,7 +299,6 @@
             }
             hentJson2();
         }
-
     </script>
 </body>
 

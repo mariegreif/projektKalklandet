@@ -202,25 +202,32 @@
 
 }
 
+/*Indholdet til aktuelle udstillinger hentes dynamiskt og styles ens */
 .enkel {
-    /*    background-color: #387288;*/
     color: #387288;
     padding: 2vw;
     display: grid;
+    /* Containern vises i gridsystem */
     grid-template-columns: 1fr;
+    /* Griddet skal have 1 del af det ledige rum i mobile */
     margin-bottom: 2vw;
     border-top: 1px solid #387288;
+    /* Hver artikel skal adskilles med en linie */
     margin-left: 1vw;
     margin-right: 1vw;
 }
 
+/*Container til artikel-billedet*/
 .column-right {
     justify-self: center;
+    /* Billedet skal placeres i midten af containeren */
 }
 
 .enkel img {
     width: 100%;
+    /* Hele billedet skal vises */
     max-width: 300px;
+    /* Max-størrelsen på billedet */
     text-align: center;
 
 }

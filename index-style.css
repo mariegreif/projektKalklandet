@@ -59,31 +59,39 @@ span,
 
 /*******************BURGERMENU********************/
 
+/*Burgermenuen vises kun i mobile*/
 #menuknap-mobile {
     width: 1.5em;
+    /* størrelsen på burgermenu-knappen */
     height: 1em;
+    /* størrelsen på burgermenu-knappen */
     font-size: 1.4em;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     position: fixed;
+    /* burgermenuen skal være fixed i toppen af sitet hele tiden */
     right: 1vw;
-    top: 0;
+    top: 1vw;
     color: white;
     z-index: 10001;
     cursor: pointer;
 }
 
+/* Container for menuen */
 #mobile-nav {
+
     width: 100%;
+    /* Menuen skal fylde helt ud til siden */
+    height: 500px;
     list-style-type: none;
     position: fixed;
-    top: 4.9vw;
+    /* menuen er placeret i toppen af sitet hele tiden */
+    top: 5.3vw;
     display: grid;
+    /* Menupunkterne placeres under hinanden */
     background-color: #776B5F;
-    height: 500px;
     padding-top: 5vw;
     z-index: 2000;
+    /* Et højt tal i z-index gør så at menuen altid placeres over alle andre elementer på sitet */
 }
 
 #mobile-nav .drop-down {
@@ -141,11 +149,12 @@ span,
     transform: scale(0);
 }
 
+/* menuen til desktop er som udgangspunkt lukket fordi vi koder mobile-first */
 #desktop {
     display: none;
 }
 
-/* Links inside the navbar */
+/* Links inde i navbaren */
 #desktop a {
     display: block;
     position: relative;
@@ -153,6 +162,7 @@ span,
 
 #desktop .drop-down {
     float: right;
+    /* menupunkterne skal placeres til højre */
     position: relative;
     padding-right: 5vw;
     right: 4vw;

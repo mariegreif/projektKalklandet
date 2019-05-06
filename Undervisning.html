@@ -22,9 +22,13 @@
             </a>
         </div>
         <nav>
+            <!--Menuknap til mobile-->
             <div id="menuknap-mobile">☰</div>
             <ul id="mobile-nav" class="hidden">
+                <!-- Navigationen har fået class hidden fordi den kun skal vises når man klikker på burgermenuen -->
+                <!-- til menupunkterne bruger vi en drop-down med undermenuer -->
                 <li class="drop-down">
+
                     <span>Attraktioner</span>
                     <a href="koldkrigsmuseum.html">Koldkrigsmuseum</a>
                     <a href="stevnsklint.html">Stevns Klint</a>
@@ -47,6 +51,7 @@
             </ul>
 
             <ul id="desktop">
+                <!-- der er lavet to forskellige menuer, en til desktop og en til mobile -->
                 <li class="drop-down"><a href="kontakt.html">Kontakt</a>
 
 
@@ -194,6 +199,7 @@
         </section>
     </main>
 
+    <!-- Her skal indholdet til udflugterne dynamiskt indlæses fra wordpress med REST API -->
     <template id="uv">
         <article class="forside-data">
             <h2></h2>
@@ -251,9 +257,12 @@
 
         function sidenVises() {
             console.log("siden vises!")
+
+            //Ved klik på burgermenuen gå til funktionen toggleMenu
             document.querySelector("#menuknap-mobile").addEventListener("click", toggleMenu);
 
         }
+
 
         function toggleMenu() {
             document.querySelector("#mobile-nav").classList.toggle("hidden");
@@ -303,7 +312,7 @@
                     klon.querySelector(".kort").innerHTML = undervisning.beskrivelse;
                     klon.querySelector(".location").innerHTML = undervisning.plads;
 
-                    // dest1.appendChild(klon);
+
                     if (undervisning.kategori == "Gymnasium") {
 
                         dest1.appendChild(klon);

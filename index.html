@@ -176,6 +176,8 @@
 
         function sidenVises() {
             console.log("siden vises!")
+
+            // ved klik på burgermenuen, kald funktionen toggleMenu
             document.querySelector("#menuknap-mobile").addEventListener("click", toggleMenu);
 
         }
@@ -199,13 +201,17 @@
         }
 
         function toggleMenu() {
+            // Registrer klik på burgermenuen som skal skiftes mellem vis og skjul
             document.querySelector("#mobile-nav").classList.toggle("hidden");
 
-
+            // Indholdet til menuen er skjult som udgangspunkt
             let erSkjult = document.querySelector("#mobile-nav").classList.contains("hidden");
 
+
+            // Hvis menuen er skjult skal menuknappen ændres til ☰
             if (erSkjult == true) {
                 document.querySelector("#menuknap-mobile").textContent = "☰";
+                // Hvis menuen ikke er skjult, skal ☰ ændres til x
             } else {
                 document.querySelector("#menuknap-mobile").innerHTML = "&times;";
             }
@@ -224,7 +230,6 @@
             document.querySelector(".start-tekst").innerHTML = intro.content.rendered;
         }
         hentJson();
-
     </script>
 
 </body>
