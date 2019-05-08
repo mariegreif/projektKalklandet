@@ -199,12 +199,12 @@
     grid-gap: 2vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
-    margin-left: 2vw;
     max-width: 1200px;
     color: #0DA6A4;
     background-color: #efefef;
     border-width: 5px;
     border-style: double;
+    padding: 1vw;
 }
 
 .enkel-geo img {
