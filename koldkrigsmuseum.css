@@ -202,6 +202,10 @@
 
 }
 
+#kkm-aktuelt {
+    padding-top: 5.5vw;
+}
+
 /*Indholdet til aktuelle udstillinger hentes dynamiskt og styles ens */
 .enkel {
     color: #387288;

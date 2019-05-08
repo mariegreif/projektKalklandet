@@ -442,7 +442,7 @@ footer {
 
 .footer-social-overlap {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     z-index: 2;
     justify-self: start;
     font-size: 6vw;
@@ -464,6 +464,7 @@ footer {
 
 .search {
     float: left;
+
 }
 
 .start-tekst h4 {
@@ -472,17 +473,19 @@ footer {
 
 .start-tekst p {
     margin-top: 0;
+    text-align: center;
 }
 
 .start-headline {
     margin-bottom: 0;
+    text-align: center;
 }
 
 
 
 
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;

@@ -182,6 +182,7 @@
 #geo-aktuelt {
     margin-left: 2vw;
     color: #0DA6A4;
+    padding-top: 5.5vw;
 }
 
 .text-box-geo {
@@ -228,6 +229,8 @@
 
 .column-right-geo img {
     justify-self: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
