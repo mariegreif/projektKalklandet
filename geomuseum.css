@@ -194,7 +194,9 @@
     margin-left: 2vw;
     max-width: 1200px;
     color: #0DA6A4;
-    background-color: #E1D9D6;
+    background-color: #efefef;
+    border-width: 5px;
+    border-style: double;
 }
 
 .enkel-geo img {

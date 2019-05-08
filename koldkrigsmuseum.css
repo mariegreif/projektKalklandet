@@ -197,8 +197,11 @@
     margin-top: 5vw;
     margin-bottom: 5vw;
     margin-left: 2vw;
-    max-width: 1200px;
+    max-width: 700px;
     color: #387288;
+    background-color: #efefef;
+    border-width: 5px;
+    border-style: double;
 
 }
 
@@ -386,7 +389,7 @@
     .text-box-sk,
     .text-box-sn {
         grid-template-columns: auto 610px auto;
-        max-width: 1200px;
+        max-width: 700px;
         margin-right: auto;
         margin-left: auto;
     }

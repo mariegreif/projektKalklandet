@@ -249,7 +249,11 @@ main {
     left: 24vw;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    background-color: rgba(119, 107, 95, 0.72);
+    background-color: rgba(0, 0, 0, 0.38);
+    border-width: 5px;
+    border-style: double;
+    border-color: #E1D9D6;
+
 }
 
 #adresse-ikon {
