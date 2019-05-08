@@ -268,7 +268,7 @@
 .column-left .kkm-btn {}
 
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;

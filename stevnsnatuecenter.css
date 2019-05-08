@@ -189,16 +189,21 @@
 
 .text-box-sn {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto 610px auto;
     grid-gap: 2vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
     margin-left: 2vw;
-    max-width: 1200px;
+    max-width: 700px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #efefef;
+    border-width: 5px;
+    border-style: double;
+    border-color: #92BA53;
 
 }
+
 
 .text-box-sn p {
     grid-column-start: 2;
@@ -254,7 +259,7 @@
 
 
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;
@@ -427,7 +432,7 @@
     .text-box-sk,
     .text-box-sn {
         grid-template-columns: auto 610px auto;
-        max-width: 1200px;
+        max-width: 700px;
     }
 
     .text-box-kkm p {

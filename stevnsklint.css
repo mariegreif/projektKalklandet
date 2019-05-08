@@ -186,11 +186,13 @@
     grid-gap: 2vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
-    margin-left: 2vw;
-    max-width: 1200px;
+    max-width: 700px;
     margin-right: auto;
     margin-left: auto;
-
+    background-color: #efefef;
+    border-width: 5px;
+    border-style: double;
+    border-color: #0083AD;
 }
 
 #headline-aktuelt {
@@ -248,8 +250,14 @@
     justify-self: center;
 }
 
+.intro-overskrift-sk {
+    grid-column-start: 2;
+    color: #008DB8;
+    text-align: center;
+}
+
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;
@@ -420,31 +428,13 @@
     .text-box-sk,
     .text-box-sn {
         grid-template-columns: auto 610px auto;
-        max-width: 1200px;
+        max-width: 700px;
     }
 
-    .text-box-kkm p {
-        grid-column-start: 2;
-
-    }
-
-    .text-box-kkm h3 {
-        grid-column-start: 2;
-        color: #387288;
-    }
-
-    .text-box-geo {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
-    }
-
-    .text-box-geo h3 {
+    .intro-overskrift-sk {
         grid-column-start: 2;
     }
 
-    .text-box-geo p {
-        grid-column-start: 2;
-    }
 
 
     .enkel {
@@ -462,31 +452,6 @@
         justify-self: end;
         border-style: none;
         float: right;
-    }
-
-    f .tekst-omos {
-        padding: 2em 2em 2em;
-        position: absolute;
-        top: 12vw;
-        margin: 5vw;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.38);
-        color: white;
-
-    }
-
-
-    #omos-main {
-
-        margin-top: 0;
-    }
-
-    #kontakt-main {
-        margin-top: 0;
-    }
-
-    #tekst-omos {
-        margin-left: 10vw;
     }
 
     .sk-aabning-text {

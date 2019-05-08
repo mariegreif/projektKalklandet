@@ -194,6 +194,7 @@
     margin-left: 2vw;
     max-width: 1200px;
     color: #0DA6A4;
+    background-color: #E1D9D6;
 }
 
 .enkel-geo img {
@@ -234,7 +235,7 @@
 }
 
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;
@@ -402,30 +403,15 @@
         grid-column-start: 2;
     }
 
-    .text-box-kkm,
-    .text-box-sk,
-    .text-box-sn {
-        grid-template-columns: auto 610px auto;
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .text-box-kkm p {
-        grid-column-start: 2;
-
-    }
-
-    .text-box-kkm h3 {
-        grid-column-start: 2;
-        color: #387288;
-    }
-
     .text-box-geo {
         grid-template-columns: auto 610px auto;
-        max-width: 1200px;
+        max-width: 700px;
         margin-right: auto;
         margin-left: auto;
+        background-color: #efefef;
+        border-width: 5px;
+        border-style: double;
+
     }
 
     .text-box-geo h3 {

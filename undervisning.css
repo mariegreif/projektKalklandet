@@ -74,12 +74,15 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     padding: 1em;
+    background-color: #efefef;
+    border-width: 5px;
+    border-style: double;
 
 }
 
 #sectioner-uv {
     display: grid;
-    padding: 1em;
+    padding: 1.5em;
     grid-template-columns: auto;
     margin-bottom: 10vw;
 }
@@ -130,7 +133,7 @@ article {
 
 
 /************ MEDIA QUERIES DESKTOP ******************/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 992px) {
 
     #logo-kalklandet img {
         width: 110%;
