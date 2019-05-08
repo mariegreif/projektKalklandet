@@ -12,12 +12,13 @@
     border: 0.5px solid lightgrey;
     width: 180px;
     height: 185px;
-    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-%C3%A5bning.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .sk-overlay {
@@ -30,6 +31,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sk-aabning-text {
@@ -53,12 +55,13 @@
 #sk-aktuelt-ikon {
     width: 180px;
     height: 185px;
-    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-aktuelt.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .sk-overlay2 {
@@ -71,6 +74,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sk-aktuelt-text {
@@ -96,12 +100,13 @@
     border: 0.5px solid lightgrey;
     width: 180px;
     height: 185px;
-    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-billetter.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .sk-overlay3 {
@@ -114,6 +119,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sk-billetter-text {
@@ -144,12 +150,13 @@
     border: 0.5px solid lightgrey;
     width: 180px;
     height: 185px;
-    border-radius: 15px;
     background-image: url(img/ikoner/stevnsklint-findvej.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1em;
     position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .sk-overlay4 {
@@ -162,6 +169,7 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
+    border-radius: 15px;
 }
 
 .sk-findvej-text {

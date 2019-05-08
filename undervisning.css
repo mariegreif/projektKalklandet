@@ -8,8 +8,19 @@
 
 }
 
+.ny_container button {
+    justify-self: end;
+}
+
 .forside-data img {
     width: 90%;
+}
+
+.forside-data {
+    border-width: 5px;
+    border-style: double;
+    border-color: #C1B8AF;
+    padding: 0.5vw;
 }
 
 
@@ -85,6 +96,7 @@ h2 {
     padding: 1.5em;
     grid-template-columns: auto;
     margin-bottom: 10vw;
+
 }
 
 article {
@@ -99,7 +111,6 @@ article {
 #section-gymnasium {
     text-align: center;
     padding: 1em;
-    border-top: solid #776B5F;
     color: #776B5F;
 
 }
@@ -236,8 +247,10 @@ article {
 
 
     .forside-data {
-        border-right-style: solid;
-        border-right-color: #776B5F;
+        border-width: 5px;
+        border-style: double;
+        border-color: #C1B8AF;
+        padding: 0.5vw;
     }
 
     .sections-info {
